@@ -50,9 +50,6 @@ a {color: white;}
     border-radius: 2rem;
 }
 
-#odd {
-    background-color: var(--BUTTON-ODD-BGCOLOR);
-}
 
 
 .legend {
@@ -64,6 +61,7 @@ a {color: white;}
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-right: 36rem;
 }
 
 .main_content {
@@ -97,6 +95,29 @@ a {color: white;}
     border-radius: 2rem;
 }
 
+.themes {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+#odd {
+    background-color: var(--BUTTON-ODD-BGCOLOR);
+}
+
+#dark_theme {
+    cursor: pointer;
+}
+
+#light_theme {
+    cursor: pointer;
+    color: white;
+}
+
 /* ---SLIDES--- */
 
 ol {
@@ -126,7 +147,7 @@ ol {
     font-weight: bold;
 }
 
-#hovering {
+#heading {
     background-color: white;
     color: black;
 }

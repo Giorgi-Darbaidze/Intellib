@@ -7,23 +7,29 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="/theme.js"></script>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="#">
     <title>Intellib</title> 
 </head>
-<body> 
+<body>
     
     <header id="theme">
-
         <div class="top">
+
             <div class="themes">
-                <p id="dark_theme" onclick="functionClick()">Dark</p>
+                <p id="dark_theme" onclick="darktheme()">Dark</p>
                 <p id="theme_slash">/</p>
                 <p id="light_theme" onclick="lighttheme()">Light</p> 
             </div>
+
             <h1 class="title">Intelligence Library</h1>
+
+            <div class="legend">
+                <p>🟩 Checked/Working</p>
+                <p>🟥 Unknown</p>
             </div>
         </div>
 
+        <!-- Categories -->
         <nav class="list">
             <button id="odd"><a href="/page/username.html">Username</a></button>
             <button><a href="/page/email.html">Email</a></button>
@@ -47,7 +53,7 @@
             <button><a href="/page/search-engines.html">Search Engines</a></button>
             <button id="odd"><a href="/page/meta-search.html">Meta Search</a></button>
             <button><a href="/page/speciality-search.html">Speciality Search</a></button>
-            <button id="heading"><a id="heading" href="#">Darknet Search</a></button>
+            <button id="odd"><a href="/page/darknet.html">Darknet Search</a></button>
             <button><a href="/page/pastebins.html">Pastebins</a></button>
             <button id="odd"><a href="/page/doc-search.html">Document Search</a></button>
             <button><a href="/page/qr-gen.html">QR Code Gen</a></button>
@@ -56,19 +62,88 @@
             <button id="odd"><a href="/page/schemes-trees.html">Schemes & Trees</a></button>
             <button><a href="/page/news-leaks.html">News & Leaks</a></button>
             <button id="odd"><a href="/page/shops.html">Useful Shops</a></button>
-            <button><a href="/page/basics.html">Knowledge</a></button>     
+            <button><a href="/page/basics.html">Online Books</a></button>     
         </nav>
     </header>
     
-    <main>
+    <main> <!--Chosen Category Data-->
+        <div class="data_box">
+            <ol>
+                <!-- DATA HERE -->
+                <li><a class="green" target="_blank" href="#">Test1</a></li>
+                <li><a class="green" target="_blank" href="#">Test2</a></li>
+                <li><a class="green" target="_blank" href="#">Test3</a></li>
+                <li><a class="green" target="_blank" href="#">Test4</a></li>
+                <li><a class="green" target="_blank" href="#">Test5</a></li>
+                <li><a class="green" target="_blank" href="#">Test6</a></li>
+                <li><a class="green" target="_blank" href="#">Test7</a></li>
+                <li><a class="green" target="_blank" href="#">Test8</a></li>
+                <li><a class="green" target="_blank" href="#">Test9</a></li>
+                <li><a class="green" target="_blank" href="#">Test10</a></li>
+                <li><a class="green" target="_blank" href="#">Test11</a></li>
+                <li><a class="green" target="_blank" href="#">Test12</a></li>
+                <li><a class="green" target="_blank" href="#">Test13</a></li>
+                <li><a class="green" target="_blank" href="#">Test14</a></li>
+                <li><a class="green" target="_blank" href="#">Test15</a></li>
+                <li><a class="green" target="_blank" href="#">Test16</a></li>
+                <li><a class="green" target="_blank" href="#">Test17</a></li>
+                <li><a class="green" target="_blank" href="#">Test18</a></li>
+                <li><a class="green" target="_blank" href="#">Test19</a></li>
+                <li><a class="green" target="_blank" href="#">Test20</a></li>
+                <li><a class="green" target="_blank" href="#">Test21</a></li>
+                <li><a class="green" target="_blank" href="#">Test22</a></li>
+                <li><a class="green" target="_blank" href="#">Test23</a></li>
+                <li><a class="green" target="_blank" href="#">Test24</a></li>
+                <li><a class="green" target="_blank" href="#">Test25</a></li>
+                <li><a class="green" target="_blank" href="#">Test26</a></li>
+                <li><a class="green" target="_blank" href="#">Test27</a></li>
+                <li><a class="green" target="_blank" href="#">Test28</a></li>
+                <li><a class="green" target="_blank" href="#">Test29</a></li>
+                <li><a class="green" target="_blank" href="#">Test30</a></li>
+                <li><a class="green" target="_blank" href="#">Test31</a></li>
+                <li><a class="green" target="_blank" href="#">Test32</a></li>
+                <li><a class="green" target="_blank" href="#">Test33</a></li>
+                <li><a class="green" target="_blank" href="#">Test34</a></li>
+                <li><a class="green" target="_blank" href="#">Test35</a></li>
+                <li><a class="green" target="_blank" href="#">Test36</a></li>
+                <li><a class="red" target="_blank" href="#">Test37</a></li>
+                <li><a class="red" target="_blank" href="#">Test38</a></li>
+                <li><a class="red" target="_blank" href="#">Test39</a></li>
+                <li><a class="red" target="_blank" href="#">Test40</a></li>
+                <li><a class="red" target="_blank" href="#">Test41</a></li>
+                <li><a class="red" target="_blank" href="#">Test42</a></li>
+                <li><a class="red" target="_blank" href="#">Test43</a></li>
+                <li><a class="red" target="_blank" href="#">Test44</a></li>
+                <li><a class="red" target="_blank" href="#">Test45</a></li>
+                <li><a class="red" target="_blank" href="#">Test46</a></li>
+            </ol>
+        </div>
+    </main>
+
+    <aside class="info" id="theme">
+        <!-- Search Bar -->
+        <div class="search_bar_box">
+            <input type="text" class="bar" placeholder=" Search Word">
+        </div>
+
+        <!-- Introduction -->
         <h2 class="main_content">
             Intelligence Library is a Database of different discipline types of Intelligence <br>
-            for example: OSINT, HUMINT, SIGINT, IMINT, GEOINT, etc... <br>
-            Here are all kinds of resources for Investigating anything/anyone <br>
-            If you have any questins or need help, here are few Good Discord Servers you can ask for help and share thoughts! <br>
+            Time to time we are adding more tools on website, <br> 
+            if you would like to share some resources, join our discord. <br>
+            In case you have questins or need help, <br> 
+            here are few good Discord Servers you can ask for help and share thoughts! <br>
             Good Luck!
         </h2>
 
+        <!-- Our Discord Invite Button -->
+        <a href="#"
+            target="_blank"
+            class="our_dis">
+            Our Discord Server
+        </a>
+
+        <!-- Other OSINT Discord Servers -->
         <div class="discord_links">
 
                 <a  href="https://discord.gg/projectowl"
@@ -88,27 +163,8 @@
                         height="150rem"
                     />
                 </a>
-
-                <a  href="https://discord.gg/nRHEaZXSM6"
-                    target="_blank">
-                    <div class="osint_HQ_cover">
-                        <div class="osint_HQ_text">
-                            <img 
-                                src="/img/hq.jpg"
-                                width="100rem"
-                                height="90rem"
-                            />
-                            OSINT HQ
-                        </div>
-                    </div>
-                </a>
             </div>
         </div>
-    </main>
-
-    <aside>
-
     </aside>
-
 </body>
 </html>

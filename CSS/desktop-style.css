@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&display=swap');
+@media screen and (min-width: 2241px) {
+
+    :root {
+        --HEADER-BGCOLOR: linear-gradient(360deg, rgb(33, 40, 57), rgba(25, 25, 112, 0.683));
+        --BUTTON-BGCOLOR: rgb(35, 40, 113);
+        --BUTTON-HOVER-BGCOLOR: rgba(23, 29, 116, 0.804);
+        --BUTTON-ODD-BGCOLOR: rgb(40, 46, 121);
+        --BUTTON-ODD-HOVER-BGCOLOR: rgb(43, 47, 108);
+    
+        --LIGHT-THEME-BORDER-COLOR: ;
+        --LIGHT-THEME-BGCOLOR: ;
+        --LIGHT-THEME-COLOR: ;
+    }
+    
+    html {
+        font-family: monospace;
+        scroll-behavior: smooth;
+        background-color: rgb(33, 40, 57);
+    }
+    
+    header{
+        margin-bottom: 2rem;
+        background: var(--HEADER-BGCOLOR);
+    }
+    
+    button {
+        background-color: var(--BUTTON-BGCOLOR);
+        font-size: 2rem;
+        padding: 1rem 1rem;
+        display: inline-block;
+    }
+    
+    button:hover {
+        background-color: var(--BUTTON-HOVER-BGCOLOR);
+        font-weight: bold;
+    }
+    
+    button#odd:hover {
+        background-color: var(--BUTTON-ODD-HOVER-BGCOLOR);
+    }
+    
+    a {color: white;}
+    
+    .top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    /* -----THEME START----- */
+    
+    .themes {
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: 1px solid black;
+        border-radius: 2rem;
+        display: flex;
+        gap: 0.5rem;
+        padding: 1rem 2rem;
+    }
+    
+    #dark_theme {
+        cursor: pointer;
+    }
+    
+    #light_theme {
+        cursor: pointer;
+        color: white;
+    }
+    
+    /* -----THEME END----- */
+    
+    .title {
+        font-size: 10rem;
+        color: black;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    
+    .legend {
+        font-size: 2rem;
+        font-family: sans-serif;
+    }
+    
+    /* -----CATEGORY BUTTONS----- */
+    
+    .list {
+        margin-top: 2rem;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        border-radius: 2rem;
+    }
+    
+    /* -----SEARCH BAR & INTRODUCTION----- */
+    
+    .info {
+        position: absolute;
+        top: 21rem;
+        left: 0rem;
+    } */
+    
+    .search_bar_box {
+        margin-bottom: 2rem;
+        margin-left: 30rem;
+    }
+    
+    .bar {
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid white;
+        border-radius: 0.5rem;
+        width: 20rem;
+        height: 2.5rem;
+        color: white;
+        font-size: 1.5rem;
+    }
+    
+    .main_content {
+        margin-left: 10rem;
+        color: white;
+    }
+    
+    /* -----DISCORD LINKS----- */
+    
+    .our_dis {
+        display: flex;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-left: 10rem;
+        margin-right: 21.05rem;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        justify-content: center;
+        background-color: #5865f2;
+        transition: 0.3s all;   
+    }
+        
+    .our_dis:hover {
+        color: #7289da;
+        background-color: #2b2f35;
+    }
+        
+    .our_dis:active {
+        color: yellow;
+        margin-right: 75rem;
+        margin-left: 40rem;
+    }
+    
+    .discord_links {
+        margin-top: 2rem;
+        gap: 1rem;
+        margin-left: 10rem;
+        display: flex;
+    }
+    
+    .block_N1, .block_N2 {
+        border-radius: 2rem;
+        transition: 0.3s all;
+    }
+    
+    .block_N1:hover, .block_N2:hover {
+        box-shadow: 0rem 2rem rgba(0, 0, 0, 0.195);
+        width: 28rem;
+        height: 14rem;
+    }
+    
+    
+    /* ---DATA PARAMETERS--- */
+    
+    ol {
+        color: white;
+        font-size: 1.3rem;
+        line-height: 2.1rem;
+        margin-left: 4rem;;
+    }
+    
+    .data_box {
+        position: absolute;
+        right: 0rem;
+        display: flex;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100rem;
+        height: 84.50rem;
+        border-radius: 2rem;
+        border: 1px solid white;
+    }
+    
+    .red {
+        color: #dd2e44;
+    }
+    
+    .green {
+        color: #78b159;
+    }
+    
+    .bold {
+        font-weight: bold;
+    }
+    
+    .recommended {
+        color: green;
+    }
+    
+    #heading {
+        background-color: white;
+        color: black;
+    }
+    
+    #odd {
+        background-color: var(--BUTTON-ODD-BGCOLOR);
+    }
+}

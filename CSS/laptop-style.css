@@ -3,8 +3,8 @@
 
     :root {
         --HEADER-BGCOLOR: linear-gradient(360deg, #00BFFF, #4169E1);
-        --BUTTON-BGCOLOR: #87CEFA;
-        --BUTTON-HOVER-BGCOLOR: #00FFFF;
+        --BUTTON-BGCOLOR: #79cbff;
+        --BUTTON-HOVER-BGCOLOR: #218ed1;
         --BUTTON-ODD-BGCOLOR: #74c7fc;
         --BUTTON-ODD-HOVER-BGCOLOR: #56beff;
     
@@ -116,12 +116,11 @@
         position: absolute;
         top: 15rem;
         left: 0rem;
-    } */
+    }
     
     .search_bar_box {
         margin-bottom: 2rem;
-        margin-left: 30rem;
-        background-color: red;
+        margin-left: 17rem;
     }
     
     .bar {
@@ -161,8 +160,6 @@
         
     .our_dis:active {
         color: yellow;
-        margin-right: 75rem;
-        margin-left: 40rem;
     }
     
     .discord_links {

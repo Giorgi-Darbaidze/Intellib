@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" id="theme">
+<html lang="en" id="html_theme">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="/theme.js"></script>
-    <link rel="icon" type="image/x-icon" href="#">
+    <link rel="stylesheet" href="/CSS/bigger-screen-style.css">
+    <link rel="stylesheet" href="/CSS/smaller-screen-style.css">
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <title>Intellib</title> 
 </head>
 <body>
     
-    <header id="theme">
+    <header id="header_theme">
         <div class="top">
 
             <div class="themes">
-                <p id="dark_theme" onclick="darktheme()">Dark</p>
-                <p id="theme_slash">/</p>
-                <p id="light_theme" onclick="lighttheme()">Light</p> 
+                <p id="dark_theme">Dark</p>
+                <p>/</p>
+                <p id="light_theme">Light</p> 
             </div>
 
             <h1 class="title">Intelligence Library</h1>
@@ -30,100 +30,63 @@
         </div>
 
         <!-- Categories -->
-        <nav class="list">
-            <button id="odd"><a href="/page/username.html">Username</a></button>
-            <button><a href="/page/email.html">Email</a></button>
-            <button id="odd"><a href="/page/vpn-proxy.html">VPN & Proxy</a></button>
-            <button><a href="/page/domain.html">Domain</a></button>
-            <button id="odd"><a href="/page/ip.html">IP Address</a></button>
-            <button><a href="/page/img-vid.html">Image & Video</a></button>
-            <button id="odd"><a href="/page/social.html">Social Network</a></button>
-            <button><a href="/page/people.html">Person</a></button>
-            <button id="odd"><a href="/page/telephone.html">Telephone</a></button>
-            <button><a href="/page/car.html">Car License</a></button>
-            <button id="odd"><a href="/page/webcams.html">Live Webcams</a></button>
-            <button><a href="/page/public-records.html">Public Records</a></button>
-            <button id="odd"><a href="/page/business-records.html">Business Records</a></button>
-            <button><a href="/page/maps.html">Geolocation Tools & Maps</a></button>
-            <button id="odd"><a href="/page/plane.html">Plane Track</a></button>
-            <button><a href="/page/archives.html">Archives</a></button>
-            <button id="odd"><a href="/page/translators.html">Language Translations</a></button>
-            <button><a href="/page/hashes.html">Encoding & Decoding</a></button>
-            <button id="odd"><a href="/page/malware-scan.html">Malicious File Analysis</a></button>
-            <button><a href="/page/search-engines.html">Search Engines</a></button>
-            <button id="odd"><a href="/page/meta-search.html">Meta Search</a></button>
-            <button><a href="/page/speciality-search.html">Speciality Search</a></button>
-            <button id="odd"><a href="/page/darknet.html">Darknet Search</a></button>
-            <button><a href="/page/pastebins.html">Pastebins</a></button>
-            <button id="odd"><a href="/page/doc-search.html">Document Search</a></button>
-            <button><a href="/page/qr-gen.html">QR Code Gen</a></button>
-            <button id="odd"><a href="/page/google-dorks.html">Google Dorks</a></button>
-            <button><a href="/page/tools-other.html">Tools & other</a></button>
-            <button id="odd"><a href="/page/schemes-trees.html">Schemes & Trees</a></button>
-            <button><a href="/page/news-leaks.html">News & Leaks</a></button>
-            <button id="odd"><a href="/page/shops.html">Useful Shops</a></button>
-            <button><a href="/page/basics.html">Online Books</a></button>     
+        <nav class="list" id="list_theme">
+            <button class="odd" id="btn_username">Username</button>
+            <button class="even" id="btn_email">Email</button>
+            <button class="odd" id="btn_vpn">VPN & Proxy</button>
+            <button class="even" id="btn_domain">Domain</button>
+            <button class="odd" id="btn_ip">IP Address</button>
+            <button class="even" id="btn_img">Image & Video</button>
+            <button class="odd" id="btn_social">Social Network</button>
+            <button class="even" id="btn_person">Person</button>
+            <button class="odd" id="btn_phone">Telephone</button>
+            <button class="even" id="btn_car">Car License</button>
+            <button class="odd" id="btn_webcam">Live Webcams</button>
+            <button class="even" id="btn_public">Public Records</button>
+            <button class="odd" id="btn_business">Business Records</button>
+            <button class="even" id="btn_maps">Geolocation Tools & Maps</button>
+            <button class="odd" id="btn_plane">Plane Track</button>
+            <button class="even" id="btn_archives">Archives</button>
+            <button class="odd" id="btn_languages">Language Translations</button>
+            <button class="even" id="btn_hashes">Encoding & Decoding</button>
+            <button class="odd" id="btn_virusScan">Malicious File Analysis</button>
+            <button class="even" id="btn_search_engines">Search Engines</button>
+            <button class="odd" id="btn_meta">Meta Search</button>
+            <button class="even" id="btn_speciality">Speciality Search</button>
+            <button class="odd" id="btn_darknet">Darknet Search</button>
+            <button class="even" id="btn_pastebins">Pastebins</button>
+            <button class="odd" id="btn_docs">Document Search</button>
+            <button class="even" id="btn_qr">QR Code Gen</button>
+            <button class="odd" id="btn_dorks">Google Dorks</button>
+            <button class="even" id="btn_other">Tools & other</button>
+            <button class="odd" id="btn_schemes">Schemes & Trees</button>
+            <button class="even" id="btn_leaks">News & Leaks</button>
+            <button class="odd" id="btn_shops">Useful Shops</button>
+            <button class="even" id="btn_books">Online Books</button>
         </nav>
     </header>
     
     <main> <!--Chosen Category Data-->
-        <div class="data_box">
-            <ol>
-                <!-- DATA HERE -->
-                <li><a class="green" target="_blank" href="#">Test1</a></li>
-                <li><a class="green" target="_blank" href="#">Test2</a></li>
-                <li><a class="green" target="_blank" href="#">Test3</a></li>
-                <li><a class="green" target="_blank" href="#">Test4</a></li>
-                <li><a class="green" target="_blank" href="#">Test5</a></li>
-                <li><a class="green" target="_blank" href="#">Test6</a></li>
-                <li><a class="green" target="_blank" href="#">Test7</a></li>
-                <li><a class="green" target="_blank" href="#">Test8</a></li>
-                <li><a class="green" target="_blank" href="#">Test9</a></li>
-                <li><a class="green" target="_blank" href="#">Test10</a></li>
-                <li><a class="green" target="_blank" href="#">Test11</a></li>
-                <li><a class="green" target="_blank" href="#">Test12</a></li>
-                <li><a class="green" target="_blank" href="#">Test13</a></li>
-                <li><a class="green" target="_blank" href="#">Test14</a></li>
-                <li><a class="green" target="_blank" href="#">Test15</a></li>
-                <li><a class="green" target="_blank" href="#">Test16</a></li>
-                <li><a class="green" target="_blank" href="#">Test17</a></li>
-                <li><a class="green" target="_blank" href="#">Test18</a></li>
-                <li><a class="green" target="_blank" href="#">Test19</a></li>
-                <li><a class="green" target="_blank" href="#">Test20</a></li>
-                <li><a class="green" target="_blank" href="#">Test21</a></li>
-                <li><a class="green" target="_blank" href="#">Test22</a></li>
-                <li><a class="green" target="_blank" href="#">Test23</a></li>
-                <li><a class="green" target="_blank" href="#">Test24</a></li>
-                <li><a class="green" target="_blank" href="#">Test25</a></li>
-                <li><a class="green" target="_blank" href="#">Test26</a></li>
-                <li><a class="green" target="_blank" href="#">Test27</a></li>
-                <li><a class="green" target="_blank" href="#">Test28</a></li>
-                <li><a class="green" target="_blank" href="#">Test29</a></li>
-                <li><a class="green" target="_blank" href="#">Test30</a></li>
-                <li><a class="green" target="_blank" href="#">Test31</a></li>
-                <li><a class="green" target="_blank" href="#">Test32</a></li>
-                <li><a class="green" target="_blank" href="#">Test33</a></li>
-                <li><a class="green" target="_blank" href="#">Test34</a></li>
-                <li><a class="green" target="_blank" href="#">Test35</a></li>
-                <li><a class="green" target="_blank" href="#">Test36</a></li>
-                <li><a class="red" target="_blank" href="#">Test37</a></li>
-                <li><a class="red" target="_blank" href="#">Test38</a></li>
-                <li><a class="red" target="_blank" href="#">Test39</a></li>
-                <li><a class="red" target="_blank" href="#">Test40</a></li>
-                <li><a class="red" target="_blank" href="#">Test41</a></li>
-                <li><a class="red" target="_blank" href="#">Test42</a></li>
-                <li><a class="red" target="_blank" href="#">Test43</a></li>
-                <li><a class="red" target="_blank" href="#">Test44</a></li>
-                <li><a class="red" target="_blank" href="#">Test45</a></li>
-                <li><a class="red" target="_blank" href="#">Test46</a></li>
-            </ol>
+        <div class="data_box_frame">
+            <div class="data_box_header">
+                <p id="data_title"></p>
+            </div>
+            <div class="data_box">
+                <ol id="data_output">
+                    <!-- JSON Data injects here -->
+                </ol>
+
+                <ul id="data_output_desc">
+                    <!-- Descriptions for Data injects here -->
+                </ul>
+            </div>
         </div>
     </main>
 
-    <aside class="info" id="theme">
+    <aside class="info" id="aside_theme">
         <!-- Search Bar -->
         <div class="search_bar_box">
-            <input type="text" class="bar" placeholder=" Search Word">
+            <input type="text" class="bar" id="bar" placeholder=" Search Word">
         </div>
 
         <!-- Introduction -->
@@ -131,7 +94,7 @@
             Intelligence Library is a Database of different discipline types of Intelligence <br>
             Time to time we are adding more tools on website, <br> 
             if you would like to share some resources, join our discord. <br>
-            In case you have questins or need help, <br> 
+            In case you have questions or need help, <br>
             here are few good Discord Servers you can ask for help and share thoughts! <br>
             Good Luck!
         </h2>
@@ -148,23 +111,16 @@
 
                 <a  href="https://discord.gg/projectowl"
                     target="_blank">
-                    <img class="block_N1"
-                        src="/img/owl.jpg"
-                        width="300rem"
-                        height="150rem"
-                    />
+                    <img class="block_N1" src="/img/owl.jpg"/>
                 </a>
 
                 <a  href="https://discord.gg/tracelabs"
                     target="_blank">
-                    <img class="block_N2"
-                        src="/img/labs.jpg"
-                        width="300rem"
-                        height="150rem"
-                    />
+                    <img class="block_N2" src="/img/labs.jpg"/>
                 </a>
-            </div>
         </div>
     </aside>
+<script src="/JS/theme.js"></script>
+<script src="/JS/data_output.js"></script>
 </body>
 </html>

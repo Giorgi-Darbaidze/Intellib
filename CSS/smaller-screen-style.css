@@ -199,10 +199,10 @@
 		font-weight: bold;
 	}
 
-.data_box {
+	.data_box {
 	display: flex;
 	width: 200rem;
-}
+	}
 
 	ol {
 		font-size: 0.9rem;
@@ -229,8 +229,8 @@
 		font-weight: bold;
 	}
 	
-/* ---CATEGORY BUTTON STYLES--- */
-/* ODDS */
+	/* ---CATEGORY BUTTON STYLES--- */
+	/* ODDS */
 
 	#btn_username, 
 	#btn_vpn,
@@ -290,24 +290,24 @@
 	#btn_leaks,
 	#btn_books {
 	background-color: var(--BUTTON-BGCOLOR);
-}
+	}
 
-#btn_email:hover,
-#btn_domain:hover,
-#btn_img:hover,
-#btn_person:hover,
-#btn_car:hover,
-#btn_public:hover,
-#btn_maps:hover,
-#btn_archives:hover,
-#btn_hashes:hover,
-#btn_search_engines:hover,
-#btn_speciality:hover,
-#btn_pastebins:hover,
-#btn_qr:hover,
-#btn_other:hover,
-#btn_leaks:hover,
-#btn_books:hover {
+	#btn_email:hover,
+	#btn_domain:hover,
+	#btn_img:hover,
+	#btn_person:hover,
+	#btn_car:hover,
+	#btn_public:hover,
+	#btn_maps:hover,
+	#btn_archives:hover,
+	#btn_hashes:hover,
+	#btn_search_engines:hover,
+	#btn_speciality:hover,
+	#btn_pastebins:hover,
+	#btn_qr:hover,
+	#btn_other:hover,
+	#btn_leaks:hover,
+	#btn_books:hover {
 	background-color: var(--BUTTON-HOVER-BGCOLOR);
-}
+	}
 }

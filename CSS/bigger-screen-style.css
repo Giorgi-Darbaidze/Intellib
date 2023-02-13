@@ -234,15 +234,15 @@
 		background-color: var(--BUTTON-ODD-BGCOLOR);
 	}
 
-.even {
+	.even {
 	background-color: var(--BUTTON-BGCOLOR);
-}
+	}
 
-.even:hover {
+	.even:hover {
 		background-color: var(--BUTTON-HOVER-BGCOLOR);
 	}
 
-.odd:hover {
+	.odd:hover {
 		background-color: var(--BUTTON-ODD-HOVER-BGCOLOR);
 	}
 }

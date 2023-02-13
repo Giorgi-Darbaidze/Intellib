@@ -19,7 +19,7 @@
 		background-color: var(--HEADER-BGCOLOR);
 	}
 
-nav button {
+	nav button {
 		font-size: 1.2rem;
 		padding: 0.5rem 0.5rem;
 		display: inline-block;

@@ -709,3 +709,175 @@ speciality.addEventListener("click", function() {
     <li> - Website Cert Search</li>
     `
 })
+
+// For Darknet
+darknet.addEventListener("click", function() {
+        data_title.textContent = "Darknet Search"
+        fetch("JS/data.json")
+            .then(response => response.json())
+            .then(data => {
+            let list_items1 = ""
+            for (let i = 0; i < data.darknet.length; i++) {
+                list_items1 += `
+                <li>
+                    <a class="green" target="_blank" href="${data.darknet[i]}"> ${data.darknet[i]} </a>
+                </li>
+                `
+            }
+
+    		let list_items2 = `
+            <br>
+            <div class="data_box_header">
+                <p id="data_title2">Darknet Search tools</p>
+            </div>
+            `
+            for (let b = 0; b < data.tools_for_darknet.length; b++) {
+                list_items2 += `
+                <li>
+                    <a class="red" href="${data.tools_for_darknet[b]}"> ${data.tools_for_darknet[b]} </a>
+                </li>
+                `
+            }
+            const full_list = list_items1 + list_items2
+            data_output.innerHTML = full_list
+        })
+        data_output_desc.innerHTML = `
+        <br>
+        <li> - Darknet Links</li>
+        <li> - Onion Scanner</li>
+        <li> - Excavator</li>
+        <li> - Tor Links</li>
+        <li> - Hidden Wiki</li>
+        <li> - Darknet Links</li>
+        <li> - Darknet Links</li>
+        `
+    })
+
+// For Pastebins
+pastebins.addEventListener("click", function() {
+    data_title.textContent = "Pastebins"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+		let list_items1 = ""
+		for (let i = 0; i < data.pastebins.length; i++) {
+			list_items1 += `
+			<li>
+				<a class="green" target="_blank" href="${data.pastebins[i]}"> ${data.pastebins[i]} </a>
+			</li>
+			`
+		}
+		data_output.innerHTML = list_items1
+    })
+    data_output_desc.innerHTML = ""
+})
+
+// For Documents
+docs.addEventListener("click", function() {
+    data_title.textContent = "Document Search"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+		let list_items1 = ""
+		for (let i = 0; i < data.document_search.length; i++) {
+			list_items1 += `
+			<li>
+				<a class="green" target="_blank" href="${data.document_search[i]}"> ${data.document_search[i]} </a>
+			</li>
+			`
+		}
+		data_output.innerHTML = list_items1
+    })
+    data_output_desc.innerHTML = ""
+})
+
+// For QR
+qr.addEventListener("click", function() {
+    data_title.textContent = "QR Code Generators"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+		let list_items1 = ""
+		for (let i = 0; i < data.qr_gen.length; i++) {
+			list_items1 += `
+			<li>
+				<a class="green" target="_blank" href="${data.qr_gen[i]}"> ${data.qr_gen[i]} </a>
+			</li>
+			`
+		}
+		data_output.innerHTML = list_items1
+    })
+    data_output_desc.innerHTML = ""
+})
+
+// For Leaks
+leaks.addEventListener("click", function() {
+    data_title.textContent = "News & Leaks"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+		let list_items1 = ""
+		for (let i = 0; i < data.news_leaks.length; i++) {
+			list_items1 += `
+			<li>
+				<a class="green" target="_blank" href="${data.news_leaks[i]}"> ${data.news_leaks[i]} </a>
+			</li>
+			`
+		}
+		data_output.innerHTML = list_items1
+    })
+    data_output_desc.innerHTML = ""
+})
+
+// For Shops
+shops.addEventListener("click", function() {
+    data_title.textContent = "Shopping"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+		let list_items1 = ""
+		for (let i = 0; i < data.shops.length; i++) {
+			list_items1 += `
+			<li>
+				<a class="green" target="_blank" href="${data.shops[i]}"> ${data.shops[i]} </a>
+			</li>
+			`
+		}
+		data_output.innerHTML = list_items1
+    })
+    data_output_desc.innerHTML = `
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <li> - Military</li>
+    <br>
+    <li> - Weapons</li>
+    `
+})
+
+// For Tools
+
+
+// For Dorks
+
+
+// For Schemes

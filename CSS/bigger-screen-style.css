@@ -10,11 +10,13 @@
 		font-family: monospace;
 		scroll-behavior: smooth;
 		background-color: white;
+		transition: 0.5s all;
 	}
 
 	header {
 		margin-bottom: 1rem;
 		background: var(--HEADER-BGCOLOR);
+		transition: 0.5s all;
 	}
 
 	a {
@@ -24,26 +26,31 @@
 	/* ---CATEGORY BUTTON STYLES--- */
 	nav button {
 		font-size: 1.4rem;
-	 padding: 0.5rem 0.5rem;
-	 display: inline-block;
+	 	padding: 0.5rem 0.5rem;
+	 	display: inline-block;
+		transition: 0.5s all;
 	}
 
 	.odd {
 		background-color: var(--BUTTON-ODD-BGCOLOR);
+		z-index: 1;
 	}
 
- 	.even {
-	 	background-color: var(--BUTTON-BGCOLOR);
+ 	 .even {
+	 background-color: var(--BUTTON-BGCOLOR);
+		z-index: 1;
  	}
 
- 	.even:hover {
+ 	 .even:hover {
 	 	transform: scale(130%);
 		border-radius: 2rem;
+		z-index: 2;
 	}
 
  	.odd:hover {
 	 	transform: scale(130%);
 		border-radius: 2rem;
+		z-index: 2;
 	}
 
 	/* -----SCROLLBARS----- */
@@ -218,7 +225,7 @@
 
  	.data_box {
 	 	display: flex;
- 	}
+	}
 
 	ol {
 		font-size: 1.1rem;

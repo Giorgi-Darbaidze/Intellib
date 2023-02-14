@@ -24,24 +24,24 @@
 	/* ---CATEGORY BUTTON STYLES--- */
 	nav button {
 		font-size: 1.4rem;
-	 padding: 0.5rem 0.5rem;
-	 display: inline-block;
+	 	padding: 0.5rem 0.5rem;
+	 	display: inline-block;
 	}
 
 	.odd {
 		background-color: var(--BUTTON-ODD-BGCOLOR);
 	}
 
- .even {
-	 background-color: var(--BUTTON-BGCOLOR);
- }
+ 	.even {
+	 	background-color: var(--BUTTON-BGCOLOR);
+ 	}
 
- .even:hover {
-	 transform: scale(130%);
+ 	.even:hover {
+	 	transform: scale(130%);
 	}
 
- .odd:hover {
-	 transform: scale(130%);
+ 	.odd:hover {
+	 	transform: scale(130%);
 	}
 
 	/* -----SCROLLBARS----- */

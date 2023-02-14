@@ -24,8 +24,8 @@
 	/* ---CATEGORY BUTTON STYLES--- */
 	nav button {
 		font-size: 1.4rem;
-	 	padding: 0.5rem 0.5rem;
-	 	display: inline-block;
+	 padding: 0.5rem 0.5rem;
+	 display: inline-block;
 	}
 
 	.odd {
@@ -38,10 +38,12 @@
 
  	.even:hover {
 	 	transform: scale(130%);
+		border-radius: 2rem;
 	}
 
  	.odd:hover {
 	 	transform: scale(130%);
+		border-radius: 2rem;
 	}
 
 	/* -----SCROLLBARS----- */
@@ -153,6 +155,7 @@
 		font-weight: bold;
 		justify-content: center;
 		background-color: #5865f2;
+		color: white;
 		transition: 0.3s all;
 	}
 
@@ -167,8 +170,8 @@
 
 	.discord_links {
 		margin-top: 1rem;
-		gap: 0.5rem;
-		margin-left: 5rem;
+		gap: 1rem;
+		margin-left: 4.5rem;
 		display: flex;
 	}
 
@@ -183,8 +186,7 @@
 	.block_N1:hover,
 	.block_N2:hover {
 		box-shadow: 0rem 1.5rem rgba(0, 0, 0, 0.195);
-		width: 20.3rem;
-		height: 10.5rem;
+		transform: scale(110%);
 	}
 
 	/* ---DATA PARAMETERS--- */
@@ -214,9 +216,9 @@
 		font-weight: bold;
 	}
 
- .data_box {
-	 display: flex;
- }
+ 	.data_box {
+	 	display: flex;
+ 	}
 
 	ol {
 		font-size: 1.1rem;

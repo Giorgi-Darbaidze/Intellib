@@ -44,19 +44,17 @@
 		"https://torlinksge6enmcyyuxjpjkoouw4oorgdgeo7ftnq3zodj7g2zxi3kyd.onion.ly/",
 		"https://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion.ly/wiki/Main_Page",
 		"http://g4eyyhx62lmueffp3au7xpsl5ob3ggegf5eidsfuiyiimy7fpdkwr4ad.onion/index.php/deep-web-chat-rooms-v3",
-		"https://gist.github.com/0x00009b/8cf0c2b0e147dc0c1114fb32b5d2d7a3",
+		"https://gist.github.com/0x00009b/8cf0c2b0e147dc0c1114fb32b5d2d7a3"
 	
-		{
-			"tools_for_darknet": [
-				"https://github.com/s-rah/onionscan",
-				"https://github.com/k4m4/onioff",
-				"https://github.com/james04gr/TorCrawl.py",
-				"https://github.com/andreyglauzer/VigilantOnion",
-				"https://github.com/danieleperera/OnionIngestor",
-				"https://github.com/josh0xA/darkdump",
-				"https://github.com/TebbaaX/Katana"
-			]
-		}
+	],
+	"tools_for_darknet": [
+		"https://github.com/s-rah/onionscan",
+		"https://github.com/k4m4/onioff",
+		"https://github.com/james04gr/TorCrawl.py",
+		"https://github.com/andreyglauzer/VigilantOnion",
+		"https://github.com/danieleperera/OnionIngestor",
+		"https://github.com/josh0xA/darkdump",
+		"https://github.com/TebbaaX/Katana"
 	],
 
 	"document_search": [

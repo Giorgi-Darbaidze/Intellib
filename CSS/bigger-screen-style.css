@@ -3,9 +3,7 @@
 	:root {
 		--HEADER-BGCOLOR: #4169e1;
 		--BUTTON-BGCOLOR: #20aaff;
-		--BUTTON-HOVER-BGCOLOR: #218ed1;
 		--BUTTON-ODD-BGCOLOR: #74c7fc;
-		--BUTTON-ODD-HOVER-BGCOLOR: #56beff;
 	}
 
 	html {
@@ -19,14 +17,31 @@
 		background: var(--HEADER-BGCOLOR);
 	}
 
+	a {
+		color: black;
+	}
+
+	/* ---CATEGORY BUTTON STYLES--- */
 	nav button {
 		font-size: 1.4rem;
 	 padding: 0.5rem 0.5rem;
 	 display: inline-block;
 	}
 
-	a {
-		color: black;
+	.odd {
+		background-color: var(--BUTTON-ODD-BGCOLOR);
+	}
+
+ .even {
+	 background-color: var(--BUTTON-BGCOLOR);
+ }
+
+ .even:hover {
+	 transform: scale(130%);
+	}
+
+ .odd:hover {
+	 transform: scale(130%);
 	}
 
 	/* -----SCROLLBARS----- */
@@ -226,23 +241,5 @@
 
 	.bold {
 		font-weight: bold;
-	}
-
-/* ---CATEGORY BUTTON STYLES--- */
-
-	.odd {
-		background-color: var(--BUTTON-ODD-BGCOLOR);
-	}
-
-	.even {
-	background-color: var(--BUTTON-BGCOLOR);
-	}
-
-	.even:hover {
-		background-color: var(--BUTTON-HOVER-BGCOLOR);
-	}
-
-	.odd:hover {
-		background-color: var(--BUTTON-ODD-HOVER-BGCOLOR);
 	}
 }

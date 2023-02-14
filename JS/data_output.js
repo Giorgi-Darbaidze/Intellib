@@ -416,7 +416,7 @@ public.addEventListener("click", function() {
 
 // For Business
 business.addEventListener("click", function() {
-    data_title.textContent = "Public Records Search"
+    data_title.textContent = "Business Records Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
@@ -554,4 +554,158 @@ translators.addEventListener("click", function() {
 		data_output.innerHTML = list_items1
     })
     data_output_desc.innerHTML = ""
+})
+
+// For Hashes
+hashes.addEventListener("click", function() {
+    data_title.textContent = "Cryptography"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+		let list_items1 = ""
+		for (let i = 0; i < data.cryptography.length; i++) {
+			list_items1 += `
+			<li>
+				<a class="green" target="_blank" href="${data.cryptography[i]}"> ${data.cryptography[i]} </a>
+			</li>
+			`
+		}
+		data_output.innerHTML = list_items1
+    })
+    data_output_desc.innerHTML = `
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <li> - Bunch of Tools</li>
+    <li> - Code Search</li>
+    <li> - Code Search</li>
+    <li> - Code Search</li>
+    <li> - Code Search</li>
+    <br>
+    `
+})
+
+// For Virus Scanners
+virusScan.addEventListener("click", function() {
+    data_title.textContent = "Virus Scanners"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+		let list_items1 = ""
+		for (let i = 0; i < data.malware_scanners.length; i++) {
+			list_items1 += `
+			<li>
+				<a class="green" target="_blank" href="${data.malware_scanners[i]}"> ${data.malware_scanners[i]} </a>
+			</li>
+			`
+		}
+		data_output.innerHTML = list_items1
+    })
+    data_output_desc.innerHTML = ""
+})
+
+// For Search Engines
+engines.addEventListener("click", function() {
+    data_title.textContent = "Search Engines"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+		let list_items1 = ""
+		for (let i = 0; i < data.search_engines.length; i++) {
+			list_items1 += `
+			<li>
+				<a class="green" target="_blank" href="${data.search_engines[i]}"> ${data.search_engines[i]} </a>
+			</li>
+			`
+		}
+		data_output.innerHTML = list_items1
+    })
+    data_output_desc.innerHTML = `
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <li> - Japan</li>
+    <li> - Korea</li>
+    <li> - France</li>
+    <li> - Israel</li>
+    <li> - China</li>
+    <li> - Sweden</li>
+    <li> - South Korea</li>
+    <li> - Poland</li>
+    <li> - Iran</li>
+    <li> - Portugal</li>
+    <li> - Russia</li>
+    <li> - Switzerland</li>
+    <li> - Czech Republic</li>
+    <li> - WayBack Map Machine</li>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    `
+})
+
+// For Meta
+meta.addEventListener("click", function() {
+    data_title.textContent = "Meta Search"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+		let list_items1 = ""
+		for (let i = 0; i < data.meta_search.length; i++) {
+			list_items1 += `
+			<li>
+				<a class="green" target="_blank" href="${data.meta_search[i]}"> ${data.meta_search[i]} </a>
+			</li>
+			`
+		}
+		data_output.innerHTML = list_items1
+    })
+    data_output_desc.innerHTML = ""
+})
+
+// Specialty Search
+speciality.addEventListener("click", function() {
+    data_title.textContent = "Specialty Search"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+		let list_items1 = ""
+		for (let i = 0; i < data.specialty_search.length; i++) {
+			list_items1 += `
+			<li>
+				<a class="green" target="_blank" href="${data.specialty_search[i]}"> ${data.specialty_search[i]} </a>
+			</li>
+			`
+		}
+		data_output.innerHTML = list_items1
+    })
+    data_output_desc.innerHTML = `
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <li> - Website Cert Search</li>
+    `
 })

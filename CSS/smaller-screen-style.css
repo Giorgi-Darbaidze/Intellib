@@ -3,31 +3,53 @@
 	:root {
 		--HEADER-BGCOLOR: rgb(65, 105, 225);
 		--BUTTON-BGCOLOR: rgb(32, 170, 255);
-		--BUTTON-HOVER-BGCOLOR: rgb(33, 142, 209);
 		--BUTTON-ODD-BGCOLOR: rgb(116, 199, 252);
-		--BUTTON-ODD-HOVER-BGCOLOR: rgb(86, 190, 255);
 	}
 
 	html {
 		font-family: monospace;
 		scroll-behavior: smooth;
 		background-color: white;
+		transition: 0.5s all;
 	}
 
 	header {
 		margin-bottom: 1rem;
 		background-color: var(--HEADER-BGCOLOR);
-	}
-
-	nav button {
-		font-size: 1.2rem;
-		padding: 0.5rem 0.5rem;
-		display: inline-block;
+		transition: 0.5s all;
 	}
 
 	a {
 		color: black;
 	}
+
+	/* ---CATEGORY BUTTON STYLES--- */
+	nav button {
+		font-size: 1.2rem;
+		padding: 0.5rem 0.5rem;
+		display: inline-block;
+		transition: 0.5s all;
+	}
+
+ 	.odd{
+		background-color: var(--BUTTON-ODD-BGCOLOR);
+		z-index: 1;
+	}
+
+ 	.odd:hover {
+		transform: scale(130%);
+		z-index: 2;
+	}
+
+ 	.even {
+	 background-color: var(--BUTTON-BGCOLOR);
+	 z-index: 1;
+ 	}
+
+ 	.even:hover {
+	 transform: scale(130%);
+	 z-index: 2;
+ 	}
 
 	/* -----SCROLLBARS----- */
 	::-webkit-scrollbar {
@@ -104,6 +126,7 @@
 		position: absolute;
 		top: 15rem;
 		left: 0rem;
+		transition: 0.5s all;
 	}
 
 	.search_bar_box {
@@ -118,6 +141,7 @@
 		width: 10rem;
 		height: 1.5rem;
 		font-size: 1rem;
+		transition: 0.5s all;
 	}
 
 	.main_content {
@@ -200,8 +224,8 @@
 	}
 
 	.data_box {
-	display: flex;
-	width: 200rem;
+	 display: flex;
+	 width: 200rem;
 	}
 
 	ol {
@@ -227,87 +251,5 @@
 
 	.bold {
 		font-weight: bold;
-	}
-	
-	/* ---CATEGORY BUTTON STYLES--- */
-	/* ODDS */
-
-	#btn_username, 
-	#btn_vpn,
-	#btn_ip,
-	#btn_social,
-	#btn_phone,
-	#btn_webcam,
-	#btn_business,
-	#btn_plane,
-	#btn_languages,
-	#btn_virusScan,
-	#btn_meta,
-	#btn_darknet,
-	#btn_docs,
-	#btn_dorks,
-	#btn_schemes,
-	#btn_shops {
-		background-color: var(--BUTTON-ODD-BGCOLOR);
-	}
-
-
-	#btn_username:hover, 
-	#btn_vpn:hover,
-	#btn_ip:hover,
-	#btn_social:hover,
-	#btn_phone:hover,
-	#btn_webcam:hover,
-	#btn_business:hover,
-	#btn_plane:hover,
-	#btn_languages:hover,
-	#btn_virusScan:hover,
-	#btn_meta:hover,
-	#btn_darknet:hover,
-	#btn_docs:hover,
-	#btn_dorks:hover,
-	#btn_schemes:hover,
-	#btn_shops:hover {
-		background-color: var(--BUTTON-ODD-HOVER-BGCOLOR);
-	}
-
-	/* EVENS */
-
-	#btn_email,
-	#btn_domain,
-	#btn_img,
-	#btn_person,
-	#btn_car,
-	#btn_public,
-	#btn_maps,
-	#btn_archives,
-	#btn_hashes,
-	#btn_search_engines,
-	#btn_speciality,
-	#btn_pastebins,
-	#btn_qr,
-	#btn_other,
-	#btn_leaks,
-	#btn_books {
-	background-color: var(--BUTTON-BGCOLOR);
-	}
-
-	#btn_email:hover,
-	#btn_domain:hover,
-	#btn_img:hover,
-	#btn_person:hover,
-	#btn_car:hover,
-	#btn_public:hover,
-	#btn_maps:hover,
-	#btn_archives:hover,
-	#btn_hashes:hover,
-	#btn_search_engines:hover,
-	#btn_speciality:hover,
-	#btn_pastebins:hover,
-	#btn_qr:hover,
-	#btn_other:hover,
-	#btn_leaks:hover,
-	#btn_books:hover {
-	background-color: var(--BUTTON-HOVER-BGCOLOR);
 	}
 }

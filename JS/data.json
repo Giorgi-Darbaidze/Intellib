@@ -45,7 +45,7 @@
 		"https://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion.ly/wiki/Main_Page",
 		"http://g4eyyhx62lmueffp3au7xpsl5ob3ggegf5eidsfuiyiimy7fpdkwr4ad.onion/index.php/deep-web-chat-rooms-v3",
 		"https://gist.github.com/0x00009b/8cf0c2b0e147dc0c1114fb32b5d2d7a3",
-
+	
 		{
 			"tools_for_darknet": [
 				"https://github.com/s-rah/onionscan",
@@ -103,10 +103,10 @@
 		"https://www.whoxy.com/"
 	],
 
-	"encodin_decoding": [
-		"https://tools.kali.org/password-attacks/hash-identifier",
+	"cryptography": [
 		"https://www.tunnelsup.com/hash-analyzer/",
 		"https://hashes.com/en/decrypt/hash",
+		"https://tools.kali.org/password-attacks/hash-identifier",
 		"https://online-barcode-reader.inliteresearch.com/",
 		"http://www.kahusecurity.com/tools.html",
 		"http://jsnice.org/",
@@ -470,7 +470,7 @@
 		"https://www.e-freesms.com/sms.php"
 	],
 
-	"speciality_search": [
+	"specialty_search": [
 		"https://www.2lingual.com/",
 		"https://archive.org/",
 		"https://millionshort.com/",

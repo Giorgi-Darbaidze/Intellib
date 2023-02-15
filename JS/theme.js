@@ -2,6 +2,7 @@ const light_theme_btn = document.getElementById('light_theme')
 const dark_theme_btn = document.getElementById('dark_theme')
 const even = document.querySelectorAll('.even')
 const odd = document.querySelectorAll('.odd')
+const discord_link = document.getElementById("our_dis")
 
 // ---DARK THEME---
 
@@ -11,9 +12,11 @@ dark_theme_btn.addEventListener('click', function () {
 	document.getElementById('list_theme').style.boxShadow = "0 -3rem 4rem rgb(33, 40, 57)"
 	document.getElementById('html_theme').style.backgroundColor = 'rgb(33, 40, 57)'
 	document.getElementById('html_theme').style.color = 'white'
-	document.getElementById('aside_theme').style.backgroundColor = 'rgb(33, 40, 57)'
 	document.getElementById('bar').style.color = 'white'
 	document.getElementById('bar').style.borderColor = 'white'
+	discord_link.classList.remove("our_dis")
+	discord_link.classList.add("our_dis_dark_theme")
+	discord_link.classList.add("our_dis_dark_theme:hover")
 
 	even.forEach(even => {
 		even.style.backgroundColor = 'rgb(36, 44, 114)'
@@ -34,9 +37,10 @@ light_theme_btn.addEventListener('click', function () {
 	document.getElementById('list_theme').style.boxShadow = "0 -3rem 4rem rgb(0, 191, 255)"
 	document.getElementById('html_theme').style.backgroundColor = 'white'
 	document.getElementById('html_theme').style.color = 'black'
-	document.getElementById('aside_theme').style.backgroundColor = 'white'
 	document.getElementById('bar').style.color = 'black'
 	document.getElementById('bar').style.borderColor = 'black'
+	discord_link.classList.remove("our_dis_dark_theme")
+	discord_link.classList.add("our_dis")
 
 	even.forEach(even => {
 		even.style.backgroundColor = 'rgb(32, 170, 255)'

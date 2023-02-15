@@ -42,6 +42,9 @@ username.addEventListener("click", function() {
         .then(response => response.json())
         .then(data => {
             let list_items1 = ""
+
+            // Data Output
+
             for (let i = 0; i < data.username_search.length; i++) {
                 list_items1 += `
                 <li>
@@ -50,15 +53,14 @@ username.addEventListener("click", function() {
                 `
             }
             data_output.innerHTML = list_items1
+
+            // Data Description Output
+
+            data_output_desc.innerHTML = ""
+            for (let b = 0; b < data.desc_username.length; b++) {
+                data_output_desc.innerHTML += data.desc_username[b]
+            }
         })
-    data_output_desc.innerHTML = `
-	<br>
-    <br>
-    <br>
-    <li> - Registration Needed</li>
-    <li> - Registration Needed</li>
-    <li> - Not Free</li>
-    `
 })
 
 // For Email
@@ -68,6 +70,9 @@ email.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		    let list_items = ""
+
+            // Data Output
+
 		    for (let i = 0; i < data.email_search.length; i++) {
 			    list_items += `
 			    <li>
@@ -76,19 +81,14 @@ email.addEventListener("click", function() {
 			    `
 		    }
 		    data_output.innerHTML = list_items
+            
+            // Data Description Output
+
+            data_output_desc.innerHTML = ""
+            for (let b = 0; b < data.desc_email.length; b++) {
+                data_output_desc.innerHTML += data.desc_email[b]
+            }
         })
-    data_output_desc.innerHTML = `
-	<li> - Not Full Free</li>
-    <li> - Not Free</li>
-    <li> - Useless</li>
-    <br>
-    <li> - USA Search</li>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    `
 })
 
 // For VPN & Proxy
@@ -98,6 +98,9 @@ vpn_proxy.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		    let list_items1 = ""
+
+            // Data Output
+
 		    for (let i = 0; i < data.vpn_proxy.length; i++) {
 		    	list_items1 += `
 		    	<li>
@@ -106,14 +109,14 @@ vpn_proxy.addEventListener("click", function() {
 		    	`
 		    }
 		    data_output.innerHTML = list_items1
-        })
-    data_output_desc.innerHTML = `
-	<li> - Not Full Free</li>
-    <li> - Not Free</li>
-    <li> - Free VPN</li>
-    <li> - VPN Detector, IP Logger</li>
-    <br>
-    `
+
+            // Data Description Output
+
+            data_output_desc.innerHTML = ""
+            for (let b = 0; b < data.desc_vpn_proxy.length; b++) {
+                data_output_desc.innerHTML += data.desc_vpn_proxy[b]
+            }
+        }) 
 })
 
 // For Domain
@@ -123,6 +126,9 @@ domain.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		    let list_items1 = ""
+            
+            // Data Output
+
 		    for (let i = 0; i < data.domain_search.length; i++) {
 		    	list_items1 += `
 		    	<li>
@@ -131,25 +137,14 @@ domain.addEventListener("click", function() {
 		    	`
 		    }
 		    data_output.innerHTML = list_items1
+
+            // Data Description Output
+
+            data_output_desc.innerHTML = ""
+            for (let b = 0; b < data.desc_domain.length; b++) {
+                data_output_desc.innerHTML += data.desc_domain[b]
+            }
         })
-    data_output_desc.innerHTML = `
-	<br>
-    <br>
-    <li> - AS, CVE, SSL/TLS Cert search</li>
-    <br>
-    <br>
-    <br>
-    <li> - Website Analyser</li>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    `
 })
 
 // For IP
@@ -159,6 +154,9 @@ ip.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.ip_address.length; i++) {
 			list_items1 += `
 			<li>
@@ -167,20 +165,14 @@ ip.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_ip.length; b++) {
+            data_output_desc.innerHTML += data.desc_ip[b]
+        }
     })
-    
-    data_output_desc.innerHTML = `
-	<br>
-    <br>
-    <br>
-    <br>
-    <li> - Canary Tokens</li>
-    <br>
-    <br>
-    <li> - DWORD IP Converter</li>
-    <br>
-    <li> - Registration Needed</li>
-    `
 })
 
 // For Image & Video
@@ -190,6 +182,9 @@ img.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.image_video.length; i++) {
 			list_items1 += `
 			<li>
@@ -198,26 +193,14 @@ img.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_image_video.length; b++) {
+            data_output_desc.innerHTML += data.desc_image_video[b]
+        }
     })
-    
-    data_output_desc.innerHTML = `
-	<br>
-    <br>
-    <br>
-    <br>
-    <li> - Registration needed</li>
-    <br>
-    <li> - MultiSearch</li>
-    <li> - Video Archive</li>
-    <li> - Video KeyWord Search</li>
-    <li> - Video KeyWord Search</li>
-    <br>
-    <br>
-    <br>
-    <li> - Photo/Gif editor</li>
-    <br>
-    <li> - Watermark Patcher</li>
-    `
 })
 
 // For Social
@@ -227,30 +210,25 @@ social.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
-		for (let i = 0; i < data.ip_address.length; i++) {
+
+        // Data Output
+
+		for (let i = 0; i < data.social_net.length; i++) {
 			list_items1 += `
 			<li>
-				<a class="green" target="_blank" href="${data.ip_address[i]}"> ${data.ip_address[i]} </a>
+				<a class="green" target="_blank" href="${data.social_net[i]}"> ${data.social_net[i]} </a>
 			</li>
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_social.length; b++) {
+            data_output_desc.innerHTML += data.desc_social[b]
+        }
     })
-    
-    data_output_desc.innerHTML = `
-	<li> - Social net Search engine</li>
-    <li> - Tweets Search</li>
-    <li> - Tweets Search</li>
-    <br>
-    <li> - Hashtag search</li>
-    <br>
-    <br>
-    <li> - Japan</li>
-    <li> - Russia</li>
-    <li> - Latin America</li>
-    <li> - Registration needed</li>
-    <li> - Skype Search</li>
-    `
 })
 
 // For Person
@@ -260,6 +238,9 @@ person.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.person.length; i++) {
 			list_items1 += `
 			<li>
@@ -268,47 +249,14 @@ person.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_person.length; b++) {
+            data_output_desc.innerHTML += data.desc_person[b]
+        }
     })
-    data_output_desc.innerHTML = `
-    <li> - Register needed</li>
-    <br>
-    <li> - Not Full Free</li>
-    <br>
-    <li> - Google Dorks</li>
-    <br>
-    <li> - Not Free</li>
-    <li> - UK Search</li>
-    <li> - USA Search</li>
-    <li> - Canada Search</li>
-    <li> - USA Students</li>
-    <br>
-    <li> - USA Inmates</li>
-    <br>
-    <br>
-    <li> - USA Search</li>
-    <br>
-    <br>
-    <br>
-    <li> - USA Search</li>
-    <br>
-    <br>
-    <br>
-    <li> - USA Inmates</li>
-    <li> - USA Inmates</li>
-    <li> - Experts Search</li>
-    <li> - Experts Search</li>
-    <br>
-    <li> - USA Search</li>
-    <br>
-    <li> - USA Search</li>
-    <br>
-    <li> - Inmates</li>
-    <li> - USA Search</li>
-    <br>
-    <li> - USA Search</li>
-    <li> - USA Search</li>
-    <li> - USA Search</li>
-    `
 })
 
 // For Phone
@@ -318,6 +266,9 @@ phone.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data output
+
 		for (let i = 0; i < data.telephone.length; i++) {
 			list_items1 += `
 			<li>
@@ -326,28 +277,14 @@ phone.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_phone.length; b++) {
+            data_output_desc.innerHTML += data.desc_phone[b]
+        }
     })
-    data_output_desc.innerHTML = `
-    <li> - Not Full Free</li>
-    <li> - Not Free</li>
-    <li> - USA Search</li>
-    <br>
-    <br>
-    <li> - Not Free</li>
-    <li> - Canada Search</li>
-    <li> - USA Search</li>
-    <li> - USA Search</li>
-    <li> - India Search</li>
-    <li> - USA Search</li>
-    <li> - USA Search</li>
-    <li> - USA Search</li>
-    <li> - USA Search</li>
-    <li> - USA Search</li>
-    <li> - USA Search</li>
-    <li> - USA Search</li>
-    <li> - PayPhone Telephones Around the World</li>
-    <li> - Free SMS around the World</li>
-    `
 })
 
 // For Car
@@ -357,6 +294,9 @@ car.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.car_license.length; i++) {
 			list_items1 += `
 			<li>
@@ -365,15 +305,14 @@ car.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_car.length; b++) {
+            data_output_desc.innerHTML += data.desc_car[b]
+        }
     })
-    data_output_desc.innerHTML = `
-    <br>
-    <br>
-    <br>
-    <li> - USA Search</li>
-    <br>
-    <li> - USA Search</li>
-    `
 })
 
 // For Webcam
@@ -383,6 +322,9 @@ webcam.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.webcams.length; i++) {
 			list_items1 += `
 			<li>
@@ -391,8 +333,14 @@ webcam.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_webcam.length; b++) {
+            data_output_desc.innerHTML += data.desc_webcam[b]
+        }
     })
-    data_output_desc.innerHTML = ""
 })
 
 // For Public
@@ -402,6 +350,9 @@ public.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.public_records.length; i++) {
 			list_items1 += `
 			<li>
@@ -410,8 +361,14 @@ public.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_public.length; b++) {
+            data_output_desc.innerHTML += data.desc_public[b]
+        }
     })
-    data_output_desc.innerHTML = ""
 })
 
 // For Business
@@ -421,6 +378,9 @@ business.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.business_records.length; i++) {
 			list_items1 += `
 			<li>
@@ -429,30 +389,26 @@ business.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_business.length; b++) {
+            data_output_desc.innerHTML += data.desc_business[b]
+        }
     })
-    data_output_desc.innerHTML = `
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <li> - UK Search</li>
-    <li> - USA Search</li>
-    `
 })
 
 // For Maps
 maps.addEventListener("click", function() {
-    data_title.textContent = "Public Records Search"
+    data_title.textContent = "Geolocation tools"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+        
+        // Data Output
+
 		for (let i = 0; i < data.maps.length; i++) {
 			list_items1 += `
 			<li>
@@ -461,42 +417,15 @@ maps.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_maps.length; b++) {
+            data_output_desc.innerHTML += data.desc_maps[b]
+        }
+        
     })
-    data_output_desc.innerHTML = `
-    <br>
-    <br>
-    <li> - Shadow/Sun Time Lapse Position</li>
-    <li> - Shadow/Sun Time Lapse Position</li>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <li> - Wireless Devices Map</li>
-    <li> - Satellites</li>
-    <br>
-    <li> - Ground Impact and Damage Radius Calculator</li>
-    <li> - Time Zone Calculators</li>
-    <br>
-    <br>
-    <br>
-    <li> - Satellite Image Timelapse</li>
-    <li> - Map Overlays for Google Earth</li>
-    <br>
-    <li> - EarthData</li>
-    <li> - Terrain Analysis</li>
-    <br>
-    <br>
-    <li> - Some Japanese Shit</li>
-    <br>
-    `
 })
 
 // For Plane
@@ -506,6 +435,9 @@ plane.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.plane_track.length; i++) {
 			list_items1 += `
 			<li>
@@ -514,8 +446,14 @@ plane.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_plane.length; b++) {
+            data_output_desc.innerHTML += data.desc_plane[b]
+        }
     })
-    data_output_desc.innerHTML = ""
 })
 
 // For Archives
@@ -525,6 +463,9 @@ archives.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.archives.length; i++) {
 			list_items1 += `
 			<li>
@@ -533,8 +474,14 @@ archives.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_archives.length; b++) {
+            data_output_desc.innerHTML += data.desc_archives[b]
+        }
     })
-    data_output_desc.innerHTML = ""
 })
 
 // For Translators
@@ -544,6 +491,9 @@ translators.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.translators.length; i++) {
 			list_items1 += `
 			<li>
@@ -552,8 +502,14 @@ translators.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_translators.length; b++) {
+            data_output_desc.innerHTML += data.desc_translators[b]
+        }
     })
-    data_output_desc.innerHTML = ""
 })
 
 // For Hashes
@@ -563,6 +519,9 @@ hashes.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.cryptography.length; i++) {
 			list_items1 += `
 			<li>
@@ -571,24 +530,14 @@ hashes.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_hashes.length; b++) {
+            data_output_desc.innerHTML += data.desc_hashes[b]
+        }
     })
-    data_output_desc.innerHTML = `
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <li> - Bunch of Tools</li>
-    <li> - Code Search</li>
-    <li> - Code Search</li>
-    <li> - Code Search</li>
-    <li> - Code Search</li>
-    <br>
-    `
 })
 
 // For Virus Scanners
@@ -598,6 +547,10 @@ virusScan.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
+
 		for (let i = 0; i < data.malware_scanners.length; i++) {
 			list_items1 += `
 			<li>
@@ -606,8 +559,14 @@ virusScan.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_virusScan.length; b++) {
+            data_output_desc.innerHTML += data.desc_virusScan[b]
+        }
     })
-    data_output_desc.innerHTML = ""
 })
 
 // For Search Engines
@@ -617,6 +576,10 @@ engines.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
+
 		for (let i = 0; i < data.search_engines.length; i++) {
 			list_items1 += `
 			<li>
@@ -625,41 +588,14 @@ engines.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_engines.length; b++) {
+            data_output_desc.innerHTML += data.desc_engines[b]
+        }
     })
-    data_output_desc.innerHTML = `
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <li> - Japan</li>
-    <li> - Korea</li>
-    <li> - France</li>
-    <li> - Israel</li>
-    <li> - China</li>
-    <li> - Sweden</li>
-    <li> - South Korea</li>
-    <li> - Poland</li>
-    <li> - Iran</li>
-    <li> - Portugal</li>
-    <li> - Russia</li>
-    <li> - Switzerland</li>
-    <li> - Czech Republic</li>
-    <li> - WayBack Map Machine</li>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    `
 })
 
 // For Meta
@@ -669,6 +605,9 @@ meta.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.meta_search.length; i++) {
 			list_items1 += `
 			<li>
@@ -677,17 +616,26 @@ meta.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_meta.length; b++) {
+            data_output_desc.innerHTML += data.desc_meta[b]
+        }
     })
-    data_output_desc.innerHTML = ""
 })
 
-// Specialty Search
+// Speciality Search
 speciality.addEventListener("click", function() {
-    data_title.textContent = "Specialty Search"
+    data_title.textContent = "Speciality Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.specialty_search.length; i++) {
 			list_items1 += `
 			<li>
@@ -696,62 +644,61 @@ speciality.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_speciality.length; b++) {
+            data_output_desc.innerHTML += data.desc_speciality[b]
+        }
     })
-    data_output_desc.innerHTML = `
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <li> - Website Cert Search</li>
-    `
 })
 
 // For Darknet
 darknet.addEventListener("click", function() {
-        data_title.textContent = "Darknet Search"
-        fetch("JS/data.json")
-            .then(response => response.json())
-            .then(data => {
-            let list_items1 = ""
-            for (let i = 0; i < data.darknet.length; i++) {
-                list_items1 += `
-                <li>
-                    <a class="green" target="_blank" href="${data.darknet[i]}"> ${data.darknet[i]} </a>
-                </li>
-                `
-            }
+    data_title.textContent = "Darknet Search"
+    fetch("JS/data.json")
+        .then(response => response.json())
+        .then(data => {
+        let list_items1 = ""
 
-    		let list_items2 = `
-            <br>
-            <div class="data_box_header">
-                <p id="data_title2">Darknet Search tools</p>
-            </div>
+        // Data Output List1
+
+        for (let i = 0; i < data.darknet.length; i++) {
+            list_items1 += `
+            <li>
+                <a class="green" target="_blank" href="${data.darknet[i]}"> ${data.darknet[i]} </a>
+            </li>
             `
-            for (let b = 0; b < data.tools_for_darknet.length; b++) {
-                list_items2 += `
-                <li>
-                    <a class="red" href="${data.tools_for_darknet[b]}"> ${data.tools_for_darknet[b]} </a>
-                </li>
-                `
-            }
-            const full_list = list_items1 + list_items2
-            data_output.innerHTML = full_list
-        })
-        data_output_desc.innerHTML = `
+        }
+
+    	let list_items2 = `
         <br>
-        <li> - Darknet Links</li>
-        <li> - Onion Scanner</li>
-        <li> - Excavator</li>
-        <li> - Tor Links</li>
-        <li> - Hidden Wiki</li>
-        <li> - Darknet Links</li>
-        <li> - Darknet Links</li>
+        <div class="data_box_header">
+            <p id="data_title2">Darknet Search tools</p>
+        </div>
         `
+
+        // Data Output List2 
+
+        for (let b = 0; b < data.tools_for_darknet.length; b++) {
+            list_items2 += `
+            <li>
+                <a class="red" href="${data.tools_for_darknet[b]}"> ${data.tools_for_darknet[b]} </a>
+            </li>
+            `
+        }
+        const full_list = list_items1 + list_items2
+        data_output.innerHTML = full_list
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_darknet.length; b++) {
+            data_output_desc.innerHTML += data.desc_darknet[b]
+        }
     })
+})
 
 // For Pastebins
 pastebins.addEventListener("click", function() {
@@ -760,6 +707,9 @@ pastebins.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.pastebins.length; i++) {
 			list_items1 += `
 			<li>
@@ -768,8 +718,14 @@ pastebins.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_pastebins.length; b++) {
+            data_output_desc.innerHTML += data.desc_pastebins[b]
+        }
     })
-    data_output_desc.innerHTML = ""
 })
 
 // For Documents
@@ -779,6 +735,9 @@ docs.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.document_search.length; i++) {
 			list_items1 += `
 			<li>
@@ -787,8 +746,14 @@ docs.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_doc.length; b++) {
+            data_output_desc.innerHTML += data.desc_doc[b]
+        }
     })
-    data_output_desc.innerHTML = ""
 })
 
 // For QR
@@ -798,6 +763,9 @@ qr.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.qr_gen.length; i++) {
 			list_items1 += `
 			<li>
@@ -806,8 +774,14 @@ qr.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_qr.length; b++) {
+            data_output_desc.innerHTML += data.desc_qr[b]
+        }
     })
-    data_output_desc.innerHTML = ""
 })
 
 // For Leaks
@@ -817,6 +791,9 @@ leaks.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.news_leaks.length; i++) {
 			list_items1 += `
 			<li>
@@ -825,8 +802,14 @@ leaks.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_leaks.length; b++) {
+            data_output_desc.innerHTML += data.desc_leaks[b]
+        }
     })
-    data_output_desc.innerHTML = ""
 })
 
 // For Shops
@@ -836,6 +819,9 @@ shops.addEventListener("click", function() {
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
+
+        // Data Output
+
 		for (let i = 0; i < data.shops.length; i++) {
 			list_items1 += `
 			<li>
@@ -844,34 +830,14 @@ shops.addEventListener("click", function() {
 			`
 		}
 		data_output.innerHTML = list_items1
+
+        // Data Description Output
+
+        data_output_desc.innerHTML = ""
+        for (let b = 0; b < data.desc_shops.length; b++) {
+            data_output_desc.innerHTML += data.desc_shops[b]
+        }
     })
-    data_output_desc.innerHTML = `
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <li> - Military</li>
-    <br>
-    <li> - Weapons</li>
-    `
 })
 
 // For Tools
@@ -881,3 +847,6 @@ shops.addEventListener("click", function() {
 
 
 // For Schemes
+
+
+// For Books

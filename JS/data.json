@@ -116,7 +116,8 @@
 		"https://grep.app/",
 		"http://codefinder.org/",
 		"https://publicwww.com/",
-		"https://tool.namedog.com/domain-typo-generator/"
+		"https://tool.namedog.com/domain-typo-generator/",
+		"https://www.hashatit.com/"
 	],
 
 	"image_video": [
@@ -485,7 +486,6 @@
 		"https://onemilliontweetmap.com/",
 		"https://www.tweeplers.com/map/",
 		"https://search.buzz.im/",
-		"https://www.hashatit.com/",
 		"http://news-explorer.mybluemix.net/?query=IRAQ&type=unconstrained",
 		"https://officially.com/",
 		"https://mixi.jp/",
@@ -493,5 +493,482 @@
 		"https://www.taringa.net/",
 		"https://audiense.com/",
 		"https://github.com/8C/SkypeSearch"
+	],
+
+	"desc_username": [
+		"<br>",
+  "<br>",
+  "<br>",
+  "<li> - Registration Needed</li>",
+  "<li> - Registration Needed</li>",
+  "<li> - Not Free</li>"
+	],
+
+	"desc_email": [
+		"<li> - Not Full Free</li>",
+  "<li> - Not Free</li>",
+  "<li> - Useless</li>",
+  "<br>",
+  "<li> - USA Search</li>",
+  "<br>",
+  "<br>",
+  "<br>",
+  "<br>",
+  "<br>"
+	],
+	
+	"desc_vpn_proxy": [
+		"<li> - Not Full Free</li>",
+  "<li> - Not Free</li>",
+  "<li> - Free VPN</li>",
+  "<li> - VPN Detector, IP Logger</li>",
+  "<br>"
+	],
+
+	"desc_domain": [
+		"<br>",
+  "<br>",
+  "<li> - AS, CVE, SSL/TLS Cert search</li>",
+  "<br>",
+  "<br>",
+  "<br>",
+  "<li> - Website Analyser</li>",
+  "<br>",
+  "<br>",
+  "<br>",
+  "<br>",
+  "<br>",
+  "<br>",
+  "<br>",
+  "<br>",
+  "<br>"
+	],
+
+	"desc_ip": [
+		"<br>",
+  "<br>",
+  "<br>",
+  "<br>",
+  "<li> - Canary Tokens</li>",
+  "<br>",
+  "<br>",
+  "<li> - DWORD IP Converter</li>",
+  "<br>",
+  "<li> - Registration Needed</li>",
+		"<br>"
+	],
+
+	"desc_image_video": [
+		"<br>",
+  "<br>",
+  "<br>",
+  "<br>",
+  "<li> - Registration needed</li>",
+  "<br>",
+  "<li> - MultiSearch</li>",
+  "<li> - Video Archive</li>",
+  "<li> - Video KeyWord Search</li>",
+  "<li> - Video KeyWord Search</li>",
+  "<br>",
+  "<br>",
+  "<br>",
+  "<li> - Photo/Gif editor</li>",
+  "<br>",
+  "<li> - Watermark Patcher</li>"
+	],
+
+	"desc_social": [
+		"<li> - Social net Search engine</li>",
+		"<li> - Tweets Search</li>",
+		"<li> - Tweets Search</li>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<li> - Japan</li>",
+		"<li> - Russia</li>",
+		"<li> - Latin America</li>",
+		"<li> - Registration needed</li>",
+		"<li> - Skype Search</li>"
+	],
+
+	"desc_person": [
+		"<li> - Register needed</li>",
+		"<br>",
+		"<li> - Not Full Free</li>",
+		"<br>",
+		"<li> - Google Dorks</li>",
+		"<br>",
+		"<li> - Not Free</li>",
+		"<li> - UK Search</li>",
+		"<li> - USA Search</li>",
+		"<li> - Canada Search</li>",
+		"<li> - USA Students</li>",
+		"<br>",
+		"<li> - USA Inmates</li>",
+		"<br>",
+		"<br>",
+		"<li> - USA Search</li>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<li> - USA Search</li>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<li> - USA Inmates</li>",
+		"<li> - USA Inmates</li>",
+		"<li> - Experts Search</li>",
+		"<li> - Experts Search</li>",
+		"<br>",
+		"<li> - USA Search</li>",
+		"<br>",
+		"<li> - USA Search</li>",
+		"<br>",
+		"<li> - Inmates</li>",
+		"<li> - USA Search</li>",
+		"<br>",
+		"<li> - USA Search</li>",
+		"<li> - USA Search</li>",
+		"<li> - USA Search</li>"
+	],
+
+	"desc_phone": [
+		"<li> - Not Full Free</li>",
+		"<li> - Not Free</li>",
+		"<li> - USA Search</li>",
+		"<br>",
+		"<br>",
+		"<li> - Not Free</li>",
+		"<li> - Canada Search</li>",
+		"<li> - USA Search</li>",
+		"<li> - USA Search</li>",
+		"<li> - India Search</li>",
+		"<li> - USA Search</li>",
+		"<li> - USA Search</li>",
+		"<li> - USA Search</li>",
+		"<li> - USA Search</li>",
+		"<li> - USA Search</li>",
+		"<li> - USA Search</li>",
+		"<li> - USA Search</li>",
+		"<li> - PayPhone Telephones Around the World</li>",
+		"<li> - Free SMS around the World</li>"
+	],
+
+	"desc_car": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<li> - USA Search</li>",
+		"<br>",
+		"<li> - USA Search</li>",
+		"<br>"
+	],
+
+	"desc_webcam": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>"
+	],
+
+	"desc_public": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>"
+	],
+
+	"desc_business": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<li> - UK Search</li>",
+		"<li> - USA Search</li>"
+	],
+
+	"desc_maps": [
+		"<br>",
+		"<br>",
+		"<li> - Shadow/Sun Time Lapse Position</li>",
+		"<li> - Shadow/Sun Time Lapse Position</li>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<li> - Wireless Devices Map</li>",
+		"<li> - Satellites</li>",
+		"<br>",
+		"<li> - Ground Impact and Damage Radius Calculator</li>",
+		"<li> - Time Zone Calculators</li>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<li> - Satellite Image Timelapse</li>",
+		"<li> - Map Overlays for Google Earth</li>",
+		"<br>",
+		"<li> - EarthData</li>",
+		"<li> - Terrain Analysis</li>",
+		"<br>",
+		"<br>",
+		"<li> - Some Japanese Shit</li>",
+		"<br>"
+	],
+
+	"desc_plane": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>"
+	],
+
+	"desc_archives": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>"
+	],
+
+	"desc_translators": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>"
+	],
+
+	"desc_hashes": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<li> - Bunch of Tools</li>",
+		"<li> - Code Search</li>",
+		"<li> - Code Search</li>",
+		"<li> - Code Search</li>",
+		"<li> - Code Search</li>",
+		"<br>",
+		"<li> - Hashtag search</li>"
+	],
+
+	"desc_virusScan": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>"
+	],
+
+	"desc_engines": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<li> - Japan</li>",
+		"<li> - Korea</li>",
+		"<li> - France</li>",
+		"<li> - Israel</li>",
+		"<li> - China</li>",
+		"<li> - Sweden</li>",
+		"<li> - South Korea</li>",
+		"<li> - Poland</li>",
+		"<li> - Iran</li>",
+		"<li> - Portugal</li>",
+		"<li> - Russia</li>",
+		"<li> - Switzerland</li>",
+		"<li> - Czech Republic</li>",
+		"<li> - WayBack Map Machine</li>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>"
+	],
+
+	"desc_meta": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>"
+	],
+
+	"desc_speciality": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<li> - Website Cert Search</li>"
+	],
+
+	"desc_darknet": [
+		"<br>",
+		"<li> - Darknet Links</li>",
+		"<li> - Onion Scanner</li>",
+		"<li> - Excavator</li>",
+		"<li> - Tor Links</li>",
+		"<li> - Hidden Wiki</li>",
+		"<li> - Darknet Links</li>",
+		"<li> - Darknet Links</li>"
+	],
+
+	"desc_pastebins": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>"
+	],
+
+	"desc_doc": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>"
+	],
+
+	"desc_qr": [
+		"<br>",
+		"<br>",
+		"<br>"
+	],
+	
+	"desc_leaks": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>"
+	],
+	
+	"desc_shops": [
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<br>",
+		"<li> - Military</li>",
+		"<br>",
+		"<li> - Weapons</li>"
+	],
+
+	"desc_tools": [
+
+	],
+
+	"desc_dorks": [
+
+	],
+
+	"desc_books": [
+
 	]
 }

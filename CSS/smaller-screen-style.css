@@ -42,8 +42,8 @@
 		z-index: 2;
 	}
 
-  	.even {
- 	 	background-color: var(--BUTTON-BGCOLOR);
+	.even {
+ 		background-color: var(--BUTTON-BGCOLOR);
 	 	z-index: 1;
  	}
 
@@ -173,8 +173,23 @@
 		background-color: #2b2f35;
 	}
 
-	.our_dis:active {
-		color: yellow;
+	.our_dis_dark_theme {
+		display: flex;
+		padding: 0.5rem;
+		margin-top: 1rem;
+		margin-left: 5rem;
+		margin-right: 12.5rem;
+		border-radius: 2rem;
+		font-size: 1.2rem;
+		font-weight: bold;
+		justify-content: center;
+		background-color: #2b2f35;
+		color: #7289da;
+		transition: 0.3s all;
+	}
+
+	.our_dis_dark_theme:hover {
+		color: blueviolet;
 	}
 
 	.discord_links {

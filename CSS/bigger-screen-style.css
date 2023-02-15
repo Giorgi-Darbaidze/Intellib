@@ -56,7 +56,7 @@
 	/* -----SCROLLBARS----- */
 	::-webkit-scrollbar {
 		width: 7px;
-		height: 7px;
+		height: 5px;
 	}
 
 	::-webkit-scrollbar-track {
@@ -171,8 +171,23 @@
 		background-color: #2b2f35;
 	}
 
-	.our_dis:active {
-		color: yellow;
+	.our_dis_dark_theme {
+		display: flex;
+		padding: 1rem;
+		margin-top: 1rem;
+		margin-left: 5rem;
+		margin-right: 12.5rem;
+		border-radius: 2rem;
+		font-size: 1.4rem;
+		font-weight: bold;
+		justify-content: center;
+		background-color: #2b2f35;
+		color: #7289da;
+		transition: 0.3s all;
+	}
+
+	.our_dis_dark_theme:hover {
+		color: blueviolet;
 	}
 
 	.discord_links {
@@ -186,8 +201,8 @@
 	.block_N2 {
 		border-radius: 2rem;
 		transition: 0.3s all;
-		width: 19.8rem;
-		height: 10rem;
+		width: 22.2rem;
+		height: 12rem;
 	}
 
 	.block_N1:hover,

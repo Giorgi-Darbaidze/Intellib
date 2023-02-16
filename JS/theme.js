@@ -7,6 +7,9 @@ const discord_link = document.getElementById("our_dis")
 // ---DARK THEME---
 
 dark_theme_btn.addEventListener('click', function () {
+	discord_link.classList.remove("our_dis")
+	discord_link.classList.add("our_dis_dark_theme")
+	discord_link.classList.add("our_dis_dark_theme:hover")
 	document.getElementById('header_theme').style.backgroundColor = 'rgba(25, 25, 112, 0.683'
 	document.getElementById('header_theme').style.color = 'white'
 	document.getElementById('list_theme').style.boxShadow = "0 -3rem 4rem rgb(33, 40, 57)"
@@ -14,9 +17,7 @@ dark_theme_btn.addEventListener('click', function () {
 	document.getElementById('html_theme').style.color = 'white'
 	document.getElementById('bar').style.color = 'white'
 	document.getElementById('bar').style.borderColor = 'white'
-	discord_link.classList.remove("our_dis")
-	discord_link.classList.add("our_dis_dark_theme")
-	discord_link.classList.add("our_dis_dark_theme:hover")
+	
 
 	even.forEach(even => {
 		even.style.backgroundColor = 'rgb(36, 44, 114)'

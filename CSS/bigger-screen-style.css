@@ -54,21 +54,21 @@
 	}
 
 	/* -----SCROLLBARS----- */
-	::-webkit-scrollbar {
+	nav button::-webkit-scrollbar {
 		width: 7px;
 		height: 5px;
 	}
 
-	::-webkit-scrollbar-track {
-		background: white;
+	nav button::-webkit-scrollbar-track {
+		background-color: white;
 	}
 
-	::-webkit-scrollbar-thumb {
-		background: #4169e1;
+	nav button::-webkit-scrollbar-thumb {
+		background-color: #4169e1;
 		border-radius: 1rem;
 	}
 
-	::-webkit-scrollbar-thumb:active {
+	nav button::-webkit-scrollbar-thumb:active {
 		background-color: #2153eb;
 	}
 
@@ -219,7 +219,7 @@
 		display: block;
 		overflow-x: hidden;
 		overflow-y: scroll;
-		width: 109rem;
+		width: 103rem;
 		height: 70rem;
 		border-top-left-radius: 2rem;
 		border-bottom-left-radius: 2rem;

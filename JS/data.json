@@ -378,7 +378,6 @@
 	],
 
 	"tools_other": [
-		"https://chrome.google.com/webstore/detail/distill-web-monitor/inlikjemeeknofckkjolnjbpehgadgge?hl=en",
 		"https://www.invid-project.eu/tools-and-services/invid-verification-plugin/",
 		"https://www.globalsecurity.org/",
 		"https://vault.fbi.gov/",
@@ -392,9 +391,6 @@
 		"https://github.com/fastfire/deepdarkCTI",
 		"https://github.com/DedSecInside/TorBot",
 		"https://www.hunch.ly/darkweb-osint/",
-		"https://start.me/p/ZME8nR/osint?locale=en",
-		"https://start.me/p/7kxyy2/osint-tools-curated-by-lorand-bodo",
-		"https://github.com/jivoi/awesome-osint",
 		"https://privacy.com/virtual-card",
 		"https://thispersondoesnotexist.com/",
 		"https://www.fakenamegenerator.com/gen-female-gr-gr.php",
@@ -402,7 +398,7 @@
 		"https://tool.namedog.com/domain-typo-generator/",
 		"https://imgbb.com/",
 		"https://manytools.org/hacker-tools/ascii-banner/",
-		"https://builtwith.com/](https://builtwith.com/",
+		"https://builtwith.com/",
 		"https://getgreenshot.org/downloads/"
 	],
 
@@ -879,6 +875,16 @@
 		"<li> - Darknet Links</li>"
 	],
 
+	"desc_darknet_tools": [
+		"<li> - Scan onion</li>",
+		"<li> - Inspecting Deep web URLs</li>",
+		"<li> - Tor Crawler</li>",
+		"<li> - Tor Website Crawler</li>",
+		"<li> - Tor Website Crawler</li>",
+		"<li> - Search from terminal</li>",
+		"<li> - Dork Scanner (Search Engine)</li>"
+	],
+
 	"desc_pastebins": [
 		"<br>",
 		"<br>",
@@ -961,7 +967,28 @@
 	],
 
 	"desc_tools": [
-
+		"<br>",
+		"<li> - Global Security</li>",
+		"<li> - FBI Vault (Information and Privacy)</li>",
+		"<li> - Country Security Reports</li>",
+		"<br>",
+		"<br>",
+		"<li> - US Antenna Search</li>",
+		"<li> - Anti Terrorism</li>",
+		"<li> - boxentriq</li>",
+		"<br>",
+		"<li> - Darknet OSINT</li>",
+		"<li> - Darknet OSINT</li>",
+		"<li> - Darknet OSINT</li>",
+		"<li> - Virtual Credit Cards</li>",
+		"<li> - Generate Fake Person</li>",
+		"<li> - Create Fake Person</li>",
+		"<li> - Geospatial</li>",
+		"<li> - Calculators, Text/Script Tools</li>",
+		"<li> - Image Sharing Website</li>",
+		"<li> - Terminal Banner Generator</li>",
+		"<li> - Website Technology identifier</li>",
+		"<li> - Blur the image part</li>"
 	],
 
 	"desc_dorks": [

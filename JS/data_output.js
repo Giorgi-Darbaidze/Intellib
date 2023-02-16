@@ -25,7 +25,7 @@ const pastebins = document.getElementById("btn_pastebins")
 const docs = document.getElementById("btn_docs")
 const qr = document.getElementById("btn_qr")
 const dorks = document.getElementById("btn_dorks")
-const other = document.getElementById("btn_other")
+const tools = document.getElementById("btn_other")
 const schemes = document.getElementById("btn_schemes")
 const leaks = document.getElementById("btn_leaks")
 const shops = document.getElementById("btn_shops")
@@ -35,43 +35,42 @@ let data_output = document.getElementById('data_output')
 let data_output_desc = document.getElementById("data_output_desc")
 let data_title = document.getElementById("data_title")
 
-// For Username
+// ---For--- Username
 username.addEventListener("click", function() {
-    data_title.textContent = "Username Search"
-    fetch("JS/data.json")
-        .then(response => response.json())
-        .then(data => {
-            let list_items1 = ""
+ data_title.textContent = "Username Search"
+ fetch("JS/data.json")
+  .then(response => response.json())
+  .then(data => {
+  	let list_items1 = ""
 
-            // Data Output
+					// Data Output
 
-            for (let i = 0; i < data.username_search.length; i++) {
-                list_items1 += `
-                <li>
-                    <a class="green" target="_blank" href="${data.username_search[i]}"> ${data.username_search[i]} </a>
-                </li>
-                `
-            }
-            data_output.innerHTML = list_items1
+    for (let i = 0; i < data.username_search.length; i++) {
+        list_items1 += `
+        <li>
+            <a class="green" target="_blank" href="${data.username_search[i]}"> ${data.username_search[i]} </a>
+        </li>
+        `
+    }
+    data_output.innerHTML = list_items1
+				// Data Description Output
 
-            // Data Description Output
-
-            data_output_desc.innerHTML = ""
-            for (let b = 0; b < data.desc_username.length; b++) {
-                data_output_desc.innerHTML += data.desc_username[b]
-            }
-        })
+    data_output_desc.innerHTML = ""
+    for (let b = 0; b < data.desc_username.length; b++) {
+        data_output_desc.innerHTML += data.desc_username[b]
+    }
+   })
 })
 
-// For Email
+// ---For--- Email
 email.addEventListener("click", function() {
-    data_title.textContent = "Email Search"
+ data_title.textContent = "Email Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		    let list_items = ""
 
-            // Data Output
+  					// Data Output
 
 		    for (let i = 0; i < data.email_search.length; i++) {
 			    list_items += `
@@ -82,24 +81,24 @@ email.addEventListener("click", function() {
 		    }
 		    data_output.innerHTML = list_items
             
-            // Data Description Output
+       // Data Description Output
 
-            data_output_desc.innerHTML = ""
-            for (let b = 0; b < data.desc_email.length; b++) {
-                data_output_desc.innerHTML += data.desc_email[b]
-            }
-        })
+      data_output_desc.innerHTML = ""
+      for (let b = 0; b < data.desc_email.length; b++) {
+          data_output_desc.innerHTML += data.desc_email[b]
+      }
+  	})
 })
 
-// For VPN & Proxy
+// ---For--- VPN & Proxy
 vpn_proxy.addEventListener("click", function() {
-    data_title.textContent = "VPN & Proxy Search"
+ data_title.textContent = "VPN & Proxy Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		    let list_items1 = ""
 
-            // Data Output
+       // Data Output
 
 		    for (let i = 0; i < data.vpn_proxy.length; i++) {
 		    	list_items1 += `
@@ -110,24 +109,24 @@ vpn_proxy.addEventListener("click", function() {
 		    }
 		    data_output.innerHTML = list_items1
 
-            // Data Description Output
+       // Data Description Output
 
-            data_output_desc.innerHTML = ""
-            for (let b = 0; b < data.desc_vpn_proxy.length; b++) {
-                data_output_desc.innerHTML += data.desc_vpn_proxy[b]
-            }
-        }) 
+      	data_output_desc.innerHTML = ""
+      	for (let b = 0; b < data.desc_vpn_proxy.length; b++) {
+      	    data_output_desc.innerHTML += data.desc_vpn_proxy[b]
+      	}
+   }) 
 })
 
-// For Domain
+// ---For--- Domain
 domain.addEventListener("click", function() {
-    data_title.textContent = "Domain Search"
+ data_title.textContent = "Domain Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		    let list_items1 = ""
             
-            // Data Output
+       // Data Output
 
 		    for (let i = 0; i < data.domain_search.length; i++) {
 		    	list_items1 += `
@@ -138,52 +137,52 @@ domain.addEventListener("click", function() {
 		    }
 		    data_output.innerHTML = list_items1
 
-            // Data Description Output
+       // Data Description Output
 
-            data_output_desc.innerHTML = ""
-            for (let b = 0; b < data.desc_domain.length; b++) {
-                data_output_desc.innerHTML += data.desc_domain[b]
-            }
-        })
+       data_output_desc.innerHTML = ""
+       for (let b = 0; b < data.desc_domain.length; b++) {
+           data_output_desc.innerHTML += data.desc_domain[b]
+       }
+   })
 })
 
-// For IP
+// ---For--- IP
 ip.addEventListener("click", function() {
-    data_title.textContent = "IP Search"
+ data_title.textContent = "IP Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
-		let list_items1 = ""
+			let list_items1 = ""
 
-        // Data Output
+  	 // Data Output
 
-		for (let i = 0; i < data.ip_address.length; i++) {
-			list_items1 += `
-			<li>
-				<a class="green" target="_blank" href="${data.ip_address[i]}"> ${data.ip_address[i]} </a>
-			</li>
-			`
-		}
-		data_output.innerHTML = list_items1
+			for (let i = 0; i < data.ip_address.length; i++) {
+				list_items1 += `
+				<li>
+					<a class="green" target="_blank" href="${data.ip_address[i]}"> ${data.ip_address[i]} </a>
+				</li>
+				`
+			}
+			data_output.innerHTML = list_items1
 
-        // Data Description Output
+  		// Data Description Output
 
-        data_output_desc.innerHTML = ""
-        for (let b = 0; b < data.desc_ip.length; b++) {
-            data_output_desc.innerHTML += data.desc_ip[b]
-        }
-    })
+  	 data_output_desc.innerHTML = ""
+  	 for (let b = 0; b < data.desc_ip.length; b++) {
+  	     data_output_desc.innerHTML += data.desc_ip[b]
+  	 }
+ 	})
 })
 
-// For Image & Video
+// ---For--- Image & Video
 img.addEventListener("click", function() {
-    data_title.textContent = "Image & Video Search"
+ data_title.textContent = "Image & Video Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.image_video.length; i++) {
 			list_items1 += `
@@ -194,24 +193,24 @@ img.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
-        data_output_desc.innerHTML = ""
-        for (let b = 0; b < data.desc_image_video.length; b++) {
-            data_output_desc.innerHTML += data.desc_image_video[b]
-        }
-    })
+   data_output_desc.innerHTML = ""
+   for (let b = 0; b < data.desc_image_video.length; b++) {
+       data_output_desc.innerHTML += data.desc_image_video[b]
+   }
+  })
 })
 
-// For Social
+// ---For--- Social
 social.addEventListener("click", function() {
-    data_title.textContent = "Social Search"
+ data_title.textContent = "Social Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.social_net.length; i++) {
 			list_items1 += `
@@ -222,7 +221,7 @@ social.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_social.length; b++) {
@@ -231,15 +230,15 @@ social.addEventListener("click", function() {
     })
 })
 
-// For Person
+// ---For--- Person
 person.addEventListener("click", function() {
-    data_title.textContent = "Person Search"
+ data_title.textContent = "Person Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.person.length; i++) {
 			list_items1 += `
@@ -250,7 +249,7 @@ person.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_person.length; b++) {
@@ -259,15 +258,15 @@ person.addEventListener("click", function() {
     })
 })
 
-// For Phone
+// ---For--- Phone
 phone.addEventListener("click", function() {
-    data_title.textContent = "Phone Search"
+ data_title.textContent = "Phone Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data output
+   // Data output
 
 		for (let i = 0; i < data.telephone.length; i++) {
 			list_items1 += `
@@ -278,7 +277,7 @@ phone.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_phone.length; b++) {
@@ -287,15 +286,15 @@ phone.addEventListener("click", function() {
     })
 })
 
-// For Car
+// ---For--- Car
 car.addEventListener("click", function() {
-    data_title.textContent = "Car Search"
+ data_title.textContent = "Car Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.car_license.length; i++) {
 			list_items1 += `
@@ -306,7 +305,7 @@ car.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_car.length; b++) {
@@ -315,15 +314,15 @@ car.addEventListener("click", function() {
     })
 })
 
-// For Webcam
+// ---For--- Webcam
 webcam.addEventListener("click", function() {
-    data_title.textContent = "Live Webcams"
+ data_title.textContent = "Live Webcams"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.webcams.length; i++) {
 			list_items1 += `
@@ -334,7 +333,7 @@ webcam.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_webcam.length; b++) {
@@ -343,15 +342,15 @@ webcam.addEventListener("click", function() {
     })
 })
 
-// For Public
+// ---For--- Public
 public.addEventListener("click", function() {
-    data_title.textContent = "Public Records Search"
+ data_title.textContent = "Public Records Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.public_records.length; i++) {
 			list_items1 += `
@@ -362,7 +361,7 @@ public.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_public.length; b++) {
@@ -371,15 +370,15 @@ public.addEventListener("click", function() {
     })
 })
 
-// For Business
+// ---For--- Business
 business.addEventListener("click", function() {
-    data_title.textContent = "Business Records Search"
+ data_title.textContent = "Business Records Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.business_records.length; i++) {
 			list_items1 += `
@@ -390,7 +389,7 @@ business.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_business.length; b++) {
@@ -399,15 +398,15 @@ business.addEventListener("click", function() {
     })
 })
 
-// For Maps
+// ---For--- Maps
 maps.addEventListener("click", function() {
-    data_title.textContent = "Geolocation tools"
+ data_title.textContent = "Geolocation tools"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
         
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.maps.length; i++) {
 			list_items1 += `
@@ -418,7 +417,7 @@ maps.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_maps.length; b++) {
@@ -428,15 +427,15 @@ maps.addEventListener("click", function() {
     })
 })
 
-// For Plane
+// ---For--- Plane
 plane.addEventListener("click", function() {
-    data_title.textContent = "Plane Search"
+ data_title.textContent = "Plane Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.plane_track.length; i++) {
 			list_items1 += `
@@ -447,7 +446,7 @@ plane.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_plane.length; b++) {
@@ -456,15 +455,15 @@ plane.addEventListener("click", function() {
     })
 })
 
-// For Archives
+// ---For--- Archives
 archives.addEventListener("click", function() {
-    data_title.textContent = "Archive Search"
+ data_title.textContent = "Archive Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.archives.length; i++) {
 			list_items1 += `
@@ -475,7 +474,7 @@ archives.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_archives.length; b++) {
@@ -484,15 +483,15 @@ archives.addEventListener("click", function() {
     })
 })
 
-// For Translators
+// ---For--- Translators
 translators.addEventListener("click", function() {
-    data_title.textContent = "Language Translators"
+ data_title.textContent = "Language Translators"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.translators.length; i++) {
 			list_items1 += `
@@ -503,7 +502,7 @@ translators.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_translators.length; b++) {
@@ -512,15 +511,15 @@ translators.addEventListener("click", function() {
     })
 })
 
-// For Hashes
+// ---For--- Hashes
 hashes.addEventListener("click", function() {
-    data_title.textContent = "Cryptography"
+ data_title.textContent = "Cryptography"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.cryptography.length; i++) {
 			list_items1 += `
@@ -531,7 +530,7 @@ hashes.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_hashes.length; b++) {
@@ -540,15 +539,15 @@ hashes.addEventListener("click", function() {
     })
 })
 
-// For Virus Scanners
+// ---For--- Virus Scanners
 virusScan.addEventListener("click", function() {
-    data_title.textContent = "Virus Scanners"
+ data_title.textContent = "Virus Scanners"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 
 		for (let i = 0; i < data.malware_scanners.length; i++) {
@@ -560,7 +559,7 @@ virusScan.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_virusScan.length; b++) {
@@ -569,15 +568,15 @@ virusScan.addEventListener("click", function() {
     })
 })
 
-// For Search Engines
+// ---For--- Search Engines
 engines.addEventListener("click", function() {
-    data_title.textContent = "Search Engines"
+ data_title.textContent = "Search Engines"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 
 		for (let i = 0; i < data.search_engines.length; i++) {
@@ -589,7 +588,7 @@ engines.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_engines.length; b++) {
@@ -598,15 +597,15 @@ engines.addEventListener("click", function() {
     })
 })
 
-// For Meta
+// ---For--- Meta
 meta.addEventListener("click", function() {
-    data_title.textContent = "Meta Search"
+ data_title.textContent = "Meta Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.meta_search.length; i++) {
 			list_items1 += `
@@ -617,7 +616,7 @@ meta.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_meta.length; b++) {
@@ -628,13 +627,13 @@ meta.addEventListener("click", function() {
 
 // Speciality Search
 speciality.addEventListener("click", function() {
-    data_title.textContent = "Speciality Search"
+ data_title.textContent = "Speciality Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.specialty_search.length; i++) {
 			list_items1 += `
@@ -645,7 +644,7 @@ speciality.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_speciality.length; b++) {
@@ -654,61 +653,70 @@ speciality.addEventListener("click", function() {
     })
 })
 
-// For Darknet
+// ---For--- Darknet
 darknet.addEventListener("click", function() {
-    data_title.textContent = "Darknet Search"
-    fetch("JS/data.json")
-        .then(response => response.json())
-        .then(data => {
-        let list_items1 = ""
+ data_title.textContent = "Darknet Search"
+ fetch("JS/data.json")
+  .then(response => response.json())
+  .then(data => {
+  let list_items1 = ""
+					
+  	// Data Output List1
 
-        // Data Output List1
+   for (let i = 0; i < data.darknet.length; i++) {
+       list_items1 += `
+       <li>
+           <a class="green" target="_blank" href="${data.darknet[i]}"> ${data.darknet[i]} </a>
+       </li>
+       `
+   }
 
-        for (let i = 0; i < data.darknet.length; i++) {
-            list_items1 += `
-            <li>
-                <a class="green" target="_blank" href="${data.darknet[i]}"> ${data.darknet[i]} </a>
-            </li>
-            `
-        }
+   let list_items2 = `
+    	<br>
+    	<div class="data_box_header">
+    	    <p id="data_title2">Darknet Search tools</p>
+    	</div>
+					<br>
+   	`
 
-    	let list_items2 = `
-        <br>
-        <div class="data_box_header">
-            <p id="data_title2">Darknet Search tools</p>
-        </div>
-        `
+   // Data Output List2 
 
-        // Data Output List2 
+   	for (let b = 0; b < data.tools_for_darknet.length; b++) {
+   	    list_items2 += `
+   	    <li>
+   	        <a class="red" href="${data.tools_for_darknet[b]}"> ${data.tools_for_darknet[b]} </a>
+   	    </li>
+   	    `
+   	}
+   	let full_list = list_items1 + list_items2
+   	data_output.innerHTML = full_list
 
-        for (let b = 0; b < data.tools_for_darknet.length; b++) {
-            list_items2 += `
-            <li>
-                <a class="red" href="${data.tools_for_darknet[b]}"> ${data.tools_for_darknet[b]} </a>
-            </li>
-            `
-        }
-        const full_list = list_items1 + list_items2
-        data_output.innerHTML = full_list
+   // Data Description Output
 
-        // Data Description Output
+    data_output_desc.innerHTML = ""
+    for (let b = 0; b < data.desc_darknet.length; b++) {
+        data_output_desc.innerHTML += data.desc_darknet[b]
+    }
 
-        data_output_desc.innerHTML = ""
-        for (let b = 0; b < data.desc_darknet.length; b++) {
-            data_output_desc.innerHTML += data.desc_darknet[b]
-        }
-    })
+    for (let c = 0; c < data.desc_darknet_tools.length; c++) {
+        data_output_desc.innerHTML += `
+									<section class='darknet_tools'>
+										${data.desc_darknet_tools[c]}
+									</section>
+								`
+    }
+  })
 })
 
-// For Pastebins
+// ---For--- Pastebins
 pastebins.addEventListener("click", function() {
-    data_title.textContent = "Pastebins"
+ data_title.textContent = "Pastebins"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.pastebins.length; i++) {
 			list_items1 += `
@@ -719,7 +727,7 @@ pastebins.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_pastebins.length; b++) {
@@ -728,15 +736,15 @@ pastebins.addEventListener("click", function() {
     })
 })
 
-// For Documents
+// ---For--- Documents
 docs.addEventListener("click", function() {
-    data_title.textContent = "Document Search"
+ data_title.textContent = "Document Search"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.document_search.length; i++) {
 			list_items1 += `
@@ -747,7 +755,7 @@ docs.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_doc.length; b++) {
@@ -756,15 +764,15 @@ docs.addEventListener("click", function() {
     })
 })
 
-// For QR
+// ---For--- QR
 qr.addEventListener("click", function() {
-    data_title.textContent = "QR Code Generators"
+ data_title.textContent = "QR Code Generators"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.qr_gen.length; i++) {
 			list_items1 += `
@@ -775,7 +783,7 @@ qr.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_qr.length; b++) {
@@ -784,15 +792,15 @@ qr.addEventListener("click", function() {
     })
 })
 
-// For Leaks
+// ---For--- Leaks
 leaks.addEventListener("click", function() {
-    data_title.textContent = "News & Leaks"
+ data_title.textContent = "News & Leaks"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.news_leaks.length; i++) {
 			list_items1 += `
@@ -803,7 +811,7 @@ leaks.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_leaks.length; b++) {
@@ -812,15 +820,15 @@ leaks.addEventListener("click", function() {
     })
 })
 
-// For Shops
+// ---For--- Shops
 shops.addEventListener("click", function() {
-    data_title.textContent = "Shopping"
+ data_title.textContent = "Shopping"
 	fetch("JS/data.json")
 		.then(response => response.json())
 		.then(data => {
 		let list_items1 = ""
 
-        // Data Output
+   // Data Output
 
 		for (let i = 0; i < data.shops.length; i++) {
 			list_items1 += `
@@ -831,7 +839,7 @@ shops.addEventListener("click", function() {
 		}
 		data_output.innerHTML = list_items1
 
-        // Data Description Output
+   // Data Description Output
 
         data_output_desc.innerHTML = ""
         for (let b = 0; b < data.desc_shops.length; b++) {
@@ -840,13 +848,80 @@ shops.addEventListener("click", function() {
     })
 })
 
-// For Tools
+// ---For--- Tools
+tools.addEventListener("click", function() {
+	data_title.textContent = "Tools and Other Resources"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+			let list_items1 = ""
+			
+			// Data Output
 
+			for (let i = 0; i < data.tools_other.length; i++) {
+				list_items1 += `
+				<li>
+					<a class="green" target="_blank" href="${data.tools_other[i]}"> ${data.tools_other[i]} </a>
+				</li>
+				`
+			 }
 
-// For Dorks
+				let list_items2 = `
+				<br><br>
 
+				<details>
+					<summary class="editional_content">Code for showing EXIF Data</summary>
+					<p>
+						<span class="editional_content_cmds">
+							python3 -m pip install --upgrade pip
+							<br>
+							python3 -m pip install --upgrade Pillow
+						</span>
+						<br>
+						Clone the code <a id="editional_content_link" target="_blank" href="https://github.com/Giorgi-Darbaidze/EXIF-Data/blob/main/exif.py">here</a>
+						<br>
+						Create "image" Folder
+						<br>
+						Code file and image folder must be in same directory
+						<span class="editional_content_commands">
+							<br>
+							python3 exif.py
+							<br>
+							less exif_data.txt
+						</span>
+					</p>
+				</details>
 
-// For Schemes
+				<br>
 
+				<details>
+					<summary class="editional_content">Code for Removing EXIF Data</summary>
+					<p>
+						<span class="editional_content_cmds">
+							python3 -m pip install --upgrade pip
+							<br>
+							python3 -m pip install --upgrade Pillow
+						</span>
+						<br>
+						Clone the Code <a id="editional_content_link" target="_blank" href="https://github.com/Giorgi-Darbaidze/EXIF-Remove/blob/main/exifr.py">here</a>
+						<br>
+						Code file and image folder must be in same directory
+						<span class="editional_content_commands">
+							<br>
+							python3 remove.exif.py
+						</span>
+						<br><br>
+					</p>
+				</details>
+				`
+				let full_list = list_items1 + list_items2
+				data_output.innerHTML = full_list
+			
+				// Data Description Output
 
-// For Books
+				data_output_desc.innerHTML = ""
+				for (let b = 0; b < data.desc_tools.length; b++) {
+					data_output_desc.innerHTML += data.desc_tools[b]
+					}
+		})
+})

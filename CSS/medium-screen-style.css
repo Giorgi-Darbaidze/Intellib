@@ -267,6 +267,31 @@
 		margin-left: 1rem;
 	}
 
+	.editional_content {
+		font-size: 0.9rem;
+		font-weight: bold;
+	}
+
+	#editional_content_cmds {
+		font-style: italic;
+	}
+
+	.editional_content_cmds {
+		color: blue;
+	}
+
+	#editional_content_link {
+		color: blueviolet;
+	}
+
+	.darknet_tools {
+		position: relative;
+		top: 4.1rem;
+		right: 29rem;
+		width: 17rem;
+		line-height: 1.4rem;
+	}	
+
 	.red {
 		color: #dd2e44;
 	}

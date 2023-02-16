@@ -1,5 +1,6 @@
+/* Bigger Screen Size */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&display=swap');
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 2090px) {
 	:root {
 		--HEADER-BGCOLOR: #4169e1;
 		--BUTTON-BGCOLOR: #20aaff;
@@ -101,7 +102,7 @@
 	/* -----THEME END----- */
 
 	.title {
-		font-size: 6rem;
+		font-size: 8rem;
 		font-family: 'Bebas Neue', sans-serif;
 	}
 
@@ -254,6 +255,31 @@
 		line-height: 1.8rem;
 		margin-left: 1rem;
 	}
+
+	.editional_content {
+	 	font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	#editional_content_cmds {
+		font-style: italic;
+	}
+
+	.editional_content_cmds {
+		color: blue;
+	}
+
+	#editional_content_link {
+		color: blueviolet;
+	}
+
+ 	.darknet_tools {
+	 	position: relative;
+	 	top: 4.1rem;
+	 	right: 29rem;
+	 	width: 17rem;
+	 	line-height: 1.4rem;
+ 	}
 
 	.red {
 		color: #dd2e44;

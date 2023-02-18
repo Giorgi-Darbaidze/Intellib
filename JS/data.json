@@ -404,9 +404,15 @@
 		"https://getgreenshot.org/downloads/"
 	],
 
-	"schemes_trees": ["/img/pic1", "pic", "pic", "pic", "pic", "pic", "pic"],
-
-	"google_dorks": ["empty", "empty"],
+	"schemes_trees": [
+		"/img/pic1.png",
+		"/img/pic2.png",
+		"/img/pic3.png",
+		"/img/pic4.png",
+		"/img/pic5.png",
+		"/img/pic6.png",
+		"/img/pic7.png"
+	],
 
 	"webcams": [
 		"https://www.earthcam.com/",
@@ -979,10 +985,6 @@
 		"- Terminal Banner Generator",
 		"- Website Technology identifier",
 		"- Blur the image part"
-	],
-
-	"desc_dorks": [
-
 	],
 
 	"desc_books": [

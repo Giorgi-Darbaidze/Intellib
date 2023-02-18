@@ -17,18 +17,21 @@ const archives = document.getElementById("btn_archives")
 const business = document.getElementById("btn_business")
 const username = document.getElementById('btn_username')
 const darknet = document.getElementById("btn_darknet")
+const schemes = document.getElementById("btn_schemes")
 const social = document.getElementById("btn_social")
 const person = document.getElementById("btn_person")
 const webcam = document.getElementById("btn_webcam")
 const hashes = document.getElementById("btn_hashes")
 const vpn_proxy = document.getElementById("btn_vpn")
 const domain = document.getElementById("btn_domain")
+const dorks = document.getElementById("btn_dorks")
 const email = document.getElementById("btn_email")
 const phone = document.getElementById("btn_phone")
 const plane = document.getElementById("btn_plane")
 const tools = document.getElementById("btn_other")
 const leaks = document.getElementById("btn_leaks")
 const shops = document.getElementById("btn_shops")
+const books = document.getElementById("btn_books")
 const maps = document.getElementById("btn_maps")
 const meta = document.getElementById("btn_meta")
 const docs = document.getElementById("btn_docs")
@@ -48,6 +51,7 @@ business.addEventListener("click", business_output)
 archives.addEventListener("click", archives_output)
 engines.addEventListener("click", engines_output)
 darknet.addEventListener("click", darknet_output)
+schemes.addEventListener("click", schemes_output)
 webcam.addEventListener("click", webcam_output)
 vpn_proxy.addEventListener("click", vpn_output)
 domain.addEventListener("click", domain_output)
@@ -60,6 +64,7 @@ email.addEventListener("click", email_output)
 leaks.addEventListener("click", leaks_output)
 shops.addEventListener("click", shops_output)
 tools.addEventListener("click", tools_output)
+dorks.addEventListener("click", dorks_output)
 maps.addEventListener("click", maps_output)
 img.addEventListener("click", image_output)
 meta.addEventListener("click", meta_output)
@@ -67,6 +72,7 @@ docs.addEventListener("click", docs_output)
 qr.addEventListener("click", qr_gen_output)
 car.addEventListener("click", car_output)
 ip.addEventListener("click", ip_output)
+books.addEventListener("click", books_output)
 
 
 import {
@@ -99,6 +105,9 @@ import {
 	leaks_output,
 	shops_output,
 	tools_output,
+	schemes_output,
+	dorks_output,
+	books_output
 } from './modules/data_output_functions.js'
 
 import {

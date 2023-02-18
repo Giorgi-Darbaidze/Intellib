@@ -224,6 +224,7 @@
 		"https://keywordtool.io/",
 		"https://www.wordtracker.com/",
 		"https://soovle.com/",
+		"https://www.daum.net/",
 		"https://www.goo.ne.jp/",
 		"https://www.orange.fr/portail",
 		"https://www.walla.co.il/",
@@ -231,6 +232,7 @@
 		"https://www.eniro.se/",
 		"https://www.naver.com/",
 		"https://www.onet.pl/",
+		"http://www.parseek.com/",
 		"https://www.sapo.pt/",
 		"https://www.yandex.com/",
 		"https://www.search.ch/",
@@ -503,7 +505,7 @@
 	"desc_email": [
 		"- Not Full Free",
   "- Not Free",
-  "- Useless",
+  "<br>",
   "<br>",
   "- USA Search",
   "<br>",
@@ -516,9 +518,9 @@
 	"desc_vpn_proxy": [
 		"- Not Full Free",
   "- Not Free",
+  "<br>",
   "- Free VPN",
-  "- VPN Detector, IP Logger",
-  "<br>"
+  "- VPN Detector, IP Logger"
 	],
 
 	"desc_domain": [
@@ -769,8 +771,6 @@
 		"<br>",
 		"<br>",
 		"<br>",
-		"<br>",
-		"<br>",
 		"<br>"
 	],
 
@@ -803,9 +803,10 @@
 		"<br>",
 		"<br>"
 	],
-
+	
 	"desc_engines": [
 		"<br>",
+		"- WayBack Map Machine",
 		"<br>",
 		"<br>",
 		"<br>",
@@ -813,8 +814,8 @@
 		"<br>",
 		"<br>",
 		"<br>",
-		"- Japan",
 		"- Korea",
+		"- Japan",
 		"- France",
 		"- Israel",
 		"- China",
@@ -825,18 +826,7 @@
 		"- Portugal",
 		"- Russia",
 		"- Switzerland",
-		"- Czech Republic",
-		"- WayBack Map Machine",
-		"<br>",
-		"<br>",
-		"<br>",
-		"<br>",
-		"<br>",
-		"<br>",
-		"<br>",
-		"<br>",
-		"<br>",
-		"<br>"
+		"- Czech Republic"
 	],
 
 	"desc_meta": [

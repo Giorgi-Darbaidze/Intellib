@@ -238,6 +238,12 @@
 		font-size: 1.4rem;
 		font-weight: bold;
 	}
+	
+	#data_title2 {
+		font-size: 1.1rem;
+		font-weight: bold;
+		margin-right: 2rem;
+	}
 
 	.data_box {
 	 	display: flex;
@@ -257,7 +263,7 @@
 	}
 
 	.editional_content {
-	 	font-size: 1.2rem;
+	 font-size: 1.2rem;
 		font-weight: bold;
 	}
 
@@ -272,14 +278,6 @@
 	#editional_content_link {
 		color: blueviolet;
 	}
-
- 	.darknet_tools {
-	 	position: relative;
-	 	top: 4.1rem;
-	 	right: 29rem;
-	 	width: 17rem;
-	 	line-height: 1.4rem;
- 	}
 
 	.red {
 		color: #dd2e44;

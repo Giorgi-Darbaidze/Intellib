@@ -30,7 +30,9 @@ export {
 	qr_gen_output,
 	leaks_output,
 	shops_output,
-	tools_output
+	tools_output,
+	schemes_output,
+	books_output
 }
 
 
@@ -717,12 +719,33 @@ function tools_output(){
 }
 
 
-// ---GOOGLE DORKS---
-
-
-
 // ---SCHEMES---
+function schemes_output(){
+ data_title.textContent = "Schemes & Trees"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+		 let list_items1 = ""
+   
+		 for (let i = 0; i < data.schemes_trees.length; i++) {
+		 	list_items1 += `
+		 		<img class="schemes_output" src="${data.schemes_trees[i]}">
+					<br>
+		 	`
+		 }
+		 data_output.innerHTML = list_items1
+  })
+}
 
 
-
-// ---BOOKS---
+// ---TECH BOOKS---
+function books_output(){
+ data_title.textContent = "Tech Books"
+	fetch("JS/data.json")
+		.then(response => response.json())
+		.then(data => {
+		 let list_items1 = ""
+   // BOOOOOOOOKS here
+		 data_output.innerHTML = list_items1
+  })
+}

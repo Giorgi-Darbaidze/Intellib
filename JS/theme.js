@@ -33,6 +33,8 @@ dark_theme_btn.addEventListener('click', function () {
 // ---LIGHT THEME---
 
 light_theme_btn.addEventListener('click', function () {
+	discord_link.classList.remove("our_dis_dark_theme")
+	discord_link.classList.add("our_dis")
 	document.getElementById('header_theme').style.backgroundColor = 'rgb(65, 105, 225)'
 	document.getElementById('header_theme').style.color = 'black'
 	document.getElementById('list_theme').style.boxShadow = "0 -3rem 4rem rgb(0, 191, 255)"
@@ -40,8 +42,6 @@ light_theme_btn.addEventListener('click', function () {
 	document.getElementById('html_theme').style.color = 'black'
 	document.getElementById('bar').style.color = 'black'
 	document.getElementById('bar').style.borderColor = 'black'
-	discord_link.classList.remove("our_dis_dark_theme")
-	discord_link.classList.add("our_dis")
 
 	even.forEach(even => {
 		even.style.backgroundColor = 'rgb(32, 170, 255)'

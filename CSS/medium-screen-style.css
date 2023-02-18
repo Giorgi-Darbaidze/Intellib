@@ -34,26 +34,20 @@
 
  	.odd {
 		background-color: var(--BUTTON-ODD-BGCOLOR);
-		z-index: 1;
-	}
+		}
 
  	.odd:hover {
+		border-radius: 1.5rem;
 		transform: scale(130%);
-		border-radius: 2rem;
-		box-shadow: 0rem -5rem rgba(255, 255, 255, 0.301);
-		z-index: 2;
 	}
 
  	.even {
- 	 	background-color: var(--BUTTON-BGCOLOR);
-	 	z-index: 1;
+ 		background-color: var(--BUTTON-BGCOLOR);
  	}
 
  	.even:hover {
-	 	transform: scale(130%);
-		border-radius: 2rem;
-		box-shadow: 0rem -5rem rgba(255, 255, 255, 0.301);
-	 	z-index: 2;
+		border-radius: 1.5rem;
+		transform: scale(130%);
  	}
 
 	/* -----SCROLLBARS----- */
@@ -282,6 +276,12 @@
 
 	#editional_content_link {
 		color: blueviolet;
+	}
+
+	.schemes_output {
+		margin-left: 11rem;
+		width: 40rem;
+		height: 50rem;
 	}
 
 	.red {

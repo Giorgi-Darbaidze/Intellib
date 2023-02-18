@@ -246,7 +246,7 @@
 	#data_title2 {
 		font-size: 1.1rem;
 		font-weight: bold;
-		margin-left: 6.6rem;
+		margin-right: 2rem;
 	}
 
 	.data_box {
@@ -283,14 +283,6 @@
 	#editional_content_link {
 		color: blueviolet;
 	}
-
-	.darknet_tools {
-		position: relative;
-		top: 4.1rem;
-		right: 29rem;
-		width: 17rem;
-		line-height: 1.4rem;
-	}	
 
 	.red {
 		color: #dd2e44;

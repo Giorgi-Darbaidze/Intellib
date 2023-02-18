@@ -42,7 +42,7 @@
 		border-radius: 2rem;
 		box-shadow: 0rem -5rem rgba(255, 255, 255, 0.301);
 		z-index: 2;
-	}
+		}
 
  	.even {
  		background-color: var(--BUTTON-BGCOLOR);
@@ -232,7 +232,7 @@
 	#data_title2 {
 		font-size: 0.9rem;
 		font-weight: bold;
-		margin-left: 6.6rem;
+		margin-right: 2rem;
 	}
 
 	.data_box {
@@ -268,14 +268,6 @@
 
 	#editional_content_link {
 		color: blueviolet;
-	}
-
-	.darknet_tools {
-		position: relative;
-		top: 4.1rem;
-		right: 29rem;
-		width: 17rem;
-		line-height: 1.4rem;
 	}
 
 	.red {

@@ -24,7 +24,6 @@ const webcam = document.getElementById("btn_webcam")
 const hashes = document.getElementById("btn_hashes")
 const vpn_proxy = document.getElementById("btn_vpn")
 const domain = document.getElementById("btn_domain")
-const dorks = document.getElementById("btn_dorks")
 const email = document.getElementById("btn_email")
 const phone = document.getElementById("btn_phone")
 const plane = document.getElementById("btn_plane")
@@ -64,7 +63,6 @@ email.addEventListener("click", email_output)
 leaks.addEventListener("click", leaks_output)
 shops.addEventListener("click", shops_output)
 tools.addEventListener("click", tools_output)
-dorks.addEventListener("click", dorks_output)
 maps.addEventListener("click", maps_output)
 img.addEventListener("click", image_output)
 meta.addEventListener("click", meta_output)
@@ -106,7 +104,6 @@ import {
 	shops_output,
 	tools_output,
 	schemes_output,
-	dorks_output,
 	books_output
 } from './modules/data_output_functions.js'
 

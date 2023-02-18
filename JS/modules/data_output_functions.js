@@ -1,4 +1,3 @@
-let data_output_desc = document.getElementById("data_output_desc")
 let data_output = document.getElementById('data_output')
 let data_title = document.getElementById("data_title")
 
@@ -42,24 +41,16 @@ function username_output() {
   .then(response => response.json())
   .then(data => {
   	let list_items1 = ""
-
-			// Data Output
-
-   for (let i = 0; i < data.username_search.length; i++) {
+	
+   for (let i = 0; i < data.username_search.length, i < data.desc_username.length; i++) {
     list_items1 += `
     <li>
      <a class="green" target="_blank" href="${data.username_search[i]}"> ${data.username_search[i]} </a>
+					${data.desc_username[i]}
     </li>
     `
    }
    data_output.innerHTML = list_items1
-
-			// Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_username.length; b++) {
-    data_output_desc.innerHTML += data.desc_username[b]
-   }
   })
 }
 
@@ -71,24 +62,16 @@ function email_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items = ""
-
-  	// Data Output
-
-		 for (let i = 0; i < data.email_search.length; i++) {
+  	
+		 for (let i = 0; i < data.email_search.length, i < data.desc_email.length; i++) {
 		  list_items += `
 		  <li>
 		  	<a class="green" target="_blank" href="${data.email_search[i]}"> ${data.email_search[i]} </a>
+					${data.desc_email[i]}
 		  </li>
 		  `
 		 }
 		 data_output.innerHTML = list_items
-         
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_email.length; b++) {
-    data_output_desc.innerHTML += data.desc_email[b]
-   }
   })
 }
 
@@ -101,23 +84,15 @@ function vpn_output(){
 		.then(data => {
 	  let list_items1 = ""
 
-   // Data Output
-
-	  for (let i = 0; i < data.vpn_proxy.length; i++) {
+	  for (let i = 0; i < data.vpn_proxy.length, i < data.desc_vpn_proxy.length; i++) {
 	  	list_items1 += `
 	  	<li>
 	  		<a class="green" target="_blank" href="${data.vpn_proxy[i]}"> ${data.vpn_proxy[i]} </a>
+					${data.desc_vpn_proxy[i]}
 	  	</li>
 	  	`
 	  }
 	  data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_vpn_proxy.length; b++) {
-   	data_output_desc.innerHTML += data.desc_vpn_proxy[b]
-   }
   }) 
 }
 
@@ -129,24 +104,16 @@ function domain_output() {
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-          
-   // Data Output
-
-		 for (let i = 0; i < data.domain_search.length; i++) {
+           
+		 for (let i = 0; i < data.domain_search.length, i < data.desc_domain.length; i++) {
 		  list_items1 += `
 		  <li>
 		  	<a class="green" target="_blank" href="${data.domain_search[i]}"> ${data.domain_search[i]} </a>
+					${data.desc_domain[i]}
 		  </li>
 		  `
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-				
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_domain.length; b++) {
-    data_output_desc.innerHTML += data.desc_domain[b]
-   }
   })
 }
 
@@ -158,24 +125,16 @@ function ip_output(){
 		.then(response => response.json())
 		.then(data => {
 			let list_items1 = ""
-
-  	// Data Output
-
-			for (let i = 0; i < data.ip_address.length; i++) {
+  	
+			for (let i = 0; i < data.ip_address.length, i < data.desc_ip.length; i++) {
 				list_items1 += `
 				<li>
 					<a class="green" target="_blank" href="${data.ip_address[i]}"> ${data.ip_address[i]} </a>
+					${data.desc_ip[i]}
 				</li>
 				`
 			}
 			data_output.innerHTML = list_items1
-
-  	// Data Description Output
-
-  	data_output_desc.innerHTML = ""
-  	for (let b = 0; b < data.desc_ip.length; b++) {
-  	 data_output_desc.innerHTML += data.desc_ip[b]
-  	}
  	})
 }
 
@@ -187,24 +146,16 @@ function image_output(){
 		.then(response => response.json())
 		.then(data => {
 			let list_items1 = ""
-
-   // Data Output
-
-			for (let i = 0; i < data.image_video.length; i++) {
+   
+			for (let i = 0; i < data.image_video.length, i < data.desc_image_video.length; i++) {
 				list_items1 += `
 				<li>
 					<a class="green" target="_blank" href="${data.image_video[i]}"> ${data.image_video[i]} </a>
+					${data.desc_image_video[i]}
 				</li>
 				`
 			}
 			data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_image_video.length; b++) {
-    data_output_desc.innerHTML += data.desc_image_video[b]
-   }
   })
 }
 
@@ -217,23 +168,15 @@ function social_output(){
 		.then(data => {
 		 let list_items1 = ""
 
-   // Data Output
-
-		 for (let i = 0; i < data.social_net.length; i++) {
+		 for (let i = 0; i < data.social_net.length, i < data.desc_social.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.social_net[i]}"> ${data.social_net[i]} </a>
+					${data.desc_social[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_social.length; b++) {
-    data_output_desc.innerHTML += data.desc_social[b]
-   }
   })
 }
 
@@ -246,23 +189,15 @@ function person_output(){
 		.then(data => {
 		 let list_items1 = ""
 
-   // Data Output
-
-		 for (let i = 0; i < data.person.length; i++) {
+		 for (let i = 0; i < data.person.length, i < data.desc_person.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.person[i]}"> ${data.person[i]} </a>
+					${data.desc_person[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_person.length; b++) {
-    data_output_desc.innerHTML += data.desc_person[b]
-   }
   })
 }
 
@@ -275,23 +210,15 @@ function phone_output(){
 		.then(data => {
 		 let list_items1 = ""
 
-   // Data output
-
-		 for (let i = 0; i < data.telephone.length; i++) {
+		 for (let i = 0; i < data.telephone.length, i < data.desc_phone.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.telephone[i]}"> ${data.telephone[i]} </a>
+					${data.desc_phone[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_phone.length; b++) {
-    data_output_desc.innerHTML += data.desc_phone[b]
-   }
   })
 }
 
@@ -304,23 +231,15 @@ function car_output(){
 		.then(data => {
 		 let list_items1 = ""
 
-   // Data Output
-
-		 for (let i = 0; i < data.car_license.length; i++) {
+		 for (let i = 0; i < data.car_license.length, i < data.desc_car.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.car_license[i]}"> ${data.car_license[i]} </a>
+					${data.desc_car[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_car.length; b++) {
-    data_output_desc.innerHTML += data.desc_car[b]
-   }
   })
 }
 
@@ -333,23 +252,17 @@ function webcam_output(){
 		.then(data => {
 		 let list_items1 = ""
 
-   // Data Output
+   
 
-		 for (let i = 0; i < data.webcams.length; i++) {
+		 for (let i = 0; i < data.webcams.length, i < data.desc_webcam.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.webcams[i]}"> ${data.webcams[i]} </a>
+					${data.desc_webcam[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_webcam.length; b++) {
-    data_output_desc.innerHTML += data.desc_webcam[b]
-   }
   })
 }
 
@@ -361,24 +274,16 @@ function public_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.public_records.length; i++) {
+   
+		 for (let i = 0; i < data.public_records.length, i < data.desc_public.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.public_records[i]}"> ${data.public_records[i]} </a>
+					${data.desc_public[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_public.length; b++) {
-    data_output_desc.innerHTML += data.desc_public[b]
-   }
   })
 }
 
@@ -390,24 +295,16 @@ function business_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.business_records.length; i++) {
+   
+		 for (let i = 0; i < data.business_records.length, i < data.desc_business.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.business_records[i]}"> ${data.business_records[i]} </a>
+					${data.desc_business[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_business.length; b++) {
-    data_output_desc.innerHTML += data.desc_business[b]
-   }
   })
 }
 
@@ -419,24 +316,16 @@ function maps_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-        
-   // Data Output
-
-		 for (let i = 0; i < data.maps.length; i++) {
+           
+		 for (let i = 0; i < data.maps.length, i < data.desc_maps.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.maps[i]}"> ${data.maps[i]} </a>
+					${data.desc_maps[i]}
 		 	</li>
 		 	`
 		 }
-		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_maps.length; b++) {
-    data_output_desc.innerHTML += data.desc_maps[b]
-   }    
+		 data_output.innerHTML = list_items1 
   })
 }
 
@@ -448,24 +337,16 @@ function plane_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.plane_track.length; i++) {
+   
+		 for (let i = 0; i < data.plane_track.length, i < data.desc_plane.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.plane_track[i]}"> ${data.plane_track[i]} </a>
+					${data.desc_plane[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_plane.length; b++) {
-    data_output_desc.innerHTML += data.desc_plane[b]
-   }
   })
 }
 
@@ -477,24 +358,16 @@ function archives_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.archives.length; i++) {
+   
+		 for (let i = 0; i < data.archives.length, i < data.desc_archives.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.archives[i]}"> ${data.archives[i]} </a>
+					${data.desc_archives[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_archives.length; b++) {
-    data_output_desc.innerHTML += data.desc_archives[b]
-   }
   })
 }
 
@@ -506,24 +379,16 @@ function translators_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.translators.length; i++) {
+   
+		 for (let i = 0; i < data.translators.length, i < data.desc_translators.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.translators[i]}"> ${data.translators[i]} </a>
+					${data.desc_translators[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_translators.length; b++) {
-    data_output_desc.innerHTML += data.desc_translators[b]
-   }
   })
 }
 
@@ -535,24 +400,16 @@ function hashes_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.cryptography.length; i++) {
+   
+		 for (let i = 0; i < data.cryptography.length, i < data.desc_hashes.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.cryptography[i]}"> ${data.cryptography[i]} </a>
+					${data.desc_hashes[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_hashes.length; b++) {
-    data_output_desc.innerHTML += data.desc_hashes[b]
-   }
   })
 }
 
@@ -565,23 +422,15 @@ function virusScan_output(){
 		.then(data => {
 		 let list_items1 = ""
 
-   // Data Output
-
-		 for (let i = 0; i < data.malware_scanners.length; i++) {
+		 for (let i = 0; i < data.malware_scanners.length, i < data.desc_virusScan.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.malware_scanners[i]}"> ${data.malware_scanners[i]} </a>
+					${data.desc_virusScan[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_virusScan.length; b++) {
-    data_output_desc.innerHTML += data.desc_virusScan[b]
-   }
   })
 }
 
@@ -593,24 +442,16 @@ function engines_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.search_engines.length; i++) {
+ 
+		 for (let i = 0; i < data.search_engines.length, i < data.desc_engines.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.search_engines[i]}"> ${data.search_engines[i]} </a>
+					${data.desc_engines[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_engines.length; b++) {
-    data_output_desc.innerHTML += data.desc_engines[b]
-   }
   })
 }
 
@@ -622,24 +463,16 @@ function meta_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.meta_search.length; i++) {
+ 
+		 for (let i = 0; i < data.meta_search.length, i < data.desc_meta.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.meta_search[i]}"> ${data.meta_search[i]} </a>
+					${data.desc_meta[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_meta.length; b++) {
-    data_output_desc.innerHTML += data.desc_meta[b]
-   }
   })
 }
 
@@ -651,24 +484,16 @@ function speciality_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.specialty_search.length; i++) {
+   
+		 for (let i = 0; i < data.specialty_search.length, i < data.desc_speciality.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.specialty_search[i]}"> ${data.specialty_search[i]} </a>
+					${data.desc_speciality[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_speciality.length; b++) {
-     data_output_desc.innerHTML += data.desc_speciality[b]
-   }
   })
 }
 
@@ -680,52 +505,39 @@ function darknet_output(){
   .then(response => response.json())
   .then(data => {
    let list_items1 = ""
-					
-  	// Data Output List 1
 
-   for (let i = 0; i < data.darknet.length; i++) {
+			// Data Output List 1
+
+   for (let i = 0; i < data.darknet.length, i < data.desc_darknet.length; i++) {
     list_items1 += `
     <li>
      <a class="green" target="_blank" href="${data.darknet[i]}"> ${data.darknet[i]} </a>
+					${data.desc_darknet[i]}
     </li>
     `
    }
 
-   let list_items2 = `
-   	<br>
-   	<div class="data_box_header">
-   	 <p id="data_title2">Darknet Search tools</p>
-   	</div>
-		 	<br>
-   `
+			// Data Output List 2
 
-   // Data Output List 2 
-
-   for (let b = 0; b < data.tools_for_darknet.length; b++) {
+			let list_items2 = ""
+			let list_items2_title = `
+				<br>
+				<div class="data_box_header">
+					<p id="data_title2">Darknet Search tools</p>
+				</div>
+				<br>
+			`
+   for (let i = 0; i < data.tools_for_darknet.length, i < data.desc_darknet_tools.length; i++) {
     list_items2 += `
+
     <li>
-     <a class="red" href="${data.tools_for_darknet[b]}"> ${data.tools_for_darknet[b]} </a>
+     <a class="red" href="${data.tools_for_darknet[i]}"> ${data.tools_for_darknet[i]} </a>
+					${data.desc_darknet_tools[i]}
     </li>
     `
    }
-
-   let full_list = list_items1 + list_items2
+   let full_list = list_items1 + list_items2_title + list_items2
    data_output.innerHTML = full_list
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_darknet.length; b++) {
-    data_output_desc.innerHTML += data.desc_darknet[b]
-   }
-
-   for (let c = 0; c < data.desc_darknet_tools.length; c++) {
-    data_output_desc.innerHTML += `
-			 	<section class='darknet_tools'>
-			 		${data.desc_darknet_tools[c]}
-			 	</section>
-			 `
-   }
   })
 }
 
@@ -737,24 +549,16 @@ function pastebins_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.pastebins.length; i++) {
+  
+		 for (let i = 0; i < data.pastebins.length, i < data.desc_pastebins.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.pastebins[i]}"> ${data.pastebins[i]} </a>
+					${data.desc_pastebins[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_pastebins.length; b++) {
-    data_output_desc.innerHTML += data.desc_pastebins[b]
-   }
   })
 }
 
@@ -766,24 +570,16 @@ function docs_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.document_search.length; i++) {
+   
+		 for (let i = 0; i < data.document_search.length, i < data.desc_doc.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.document_search[i]}"> ${data.document_search[i]} </a>
+					${data.desc_doc[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_doc.length; b++) {
-    data_output_desc.innerHTML += data.desc_doc[b]
-   }
   })
 }
 
@@ -795,24 +591,16 @@ function qr_gen_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.qr_gen.length; i++) {
+   
+		 for (let i = 0; i < data.qr_gen.length, i < data.desc_qr.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.qr_gen[i]}"> ${data.qr_gen[i]} </a>
+					${data.desc_qr[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_qr.length; b++) {
-    data_output_desc.innerHTML += data.desc_qr[b]
-   }
   })
 }
 
@@ -824,24 +612,16 @@ function leaks_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.news_leaks.length; i++) {
+   
+		 for (let i = 0; i < data.news_leaks.length, i < data.desc_leaks.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.news_leaks[i]}"> ${data.news_leaks[i]} </a>
+					${data.desc_leaks[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_leaks.length; b++) {
-    data_output_desc.innerHTML += data.desc_leaks[b]
-   }
   })
 }
 
@@ -852,24 +632,16 @@ function shops_output(){
 		.then(response => response.json())
 		.then(data => {
 		 let list_items1 = ""
-
-   // Data Output
-
-		 for (let i = 0; i < data.shops.length; i++) {
+   
+		 for (let i = 0; i < data.shops.length, i < data.desc_shops.length; i++) {
 		 	list_items1 += `
 		 	<li>
 		 		<a class="green" target="_blank" href="${data.shops[i]}"> ${data.shops[i]} </a>
+					${data.desc_shops[i]}
 		 	</li>
 		 	`
 		 }
 		 data_output.innerHTML = list_items1
-
-   // Data Description Output
-
-   data_output_desc.innerHTML = ""
-   for (let b = 0; b < data.desc_shops.length; b++) {
-    data_output_desc.innerHTML += data.desc_shops[b]
-   }
   })
 }
 
@@ -881,13 +653,12 @@ function tools_output(){
 		.then(response => response.json())
 		.then(data => {
 			let list_items1 = ""
-			
-			// Data Output
-
-			for (let i = 0; i < data.tools_other.length; i++) {
+						
+			for (let i = 0; i < data.tools_other.length, i < data.desc_tools.length; i++) {
 				list_items1 += `
 				<li>
 					<a class="green" target="_blank" href="${data.tools_other[i]}"> ${data.tools_other[i]} </a>
+					${data.desc_tools[i]}
 				</li>
 				`
 			}
@@ -942,13 +713,6 @@ function tools_output(){
 				`
 			let full_list = list_items1 + list_items2
 			data_output.innerHTML = full_list
-			
-			// Data Description Output
-
-			data_output_desc.innerHTML = ""
-			for (let b = 0; b < data.desc_tools.length; b++) {
-				data_output_desc.innerHTML += data.desc_tools[b]
-			}
 		})
 }
 

@@ -42,7 +42,7 @@
 		border-radius: 2rem;
 		box-shadow: 0rem -5rem rgba(255, 255, 255, 0.301);
 		z-index: 2;
-		}
+	}
 
  	.even {
  		background-color: var(--BUTTON-BGCOLOR);

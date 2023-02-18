@@ -87,7 +87,15 @@
     <aside class="info">
         <!-- Search Bar -->
         <div class="search_bar_box">
-                <input type="text" class="bar" id="bar" placeholder=" Search Word">
+            <form method="post" id="form">
+                <input 
+                    name="word"
+                    type="text" 
+                    class="bar" 
+                    id="bar" 
+                    placeholder=" Search Word"
+                    maxlength="20"
+                >
             </form>
         </div>
 
@@ -125,7 +133,6 @@
                 </a>
         </div>
     </aside>
-<script src="/JS/theme.js"></script>
-<script src="/JS/data_output.js"></script>
+<script src="/JS/main.js" type="module"></script>
 </body>
 </html>

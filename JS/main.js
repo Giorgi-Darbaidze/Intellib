@@ -63,6 +63,7 @@ email.addEventListener("click", email_output)
 leaks.addEventListener("click", leaks_output)
 shops.addEventListener("click", shops_output)
 tools.addEventListener("click", tools_output)
+books.addEventListener("click", books_output)
 maps.addEventListener("click", maps_output)
 img.addEventListener("click", image_output)
 meta.addEventListener("click", meta_output)
@@ -70,7 +71,7 @@ docs.addEventListener("click", docs_output)
 qr.addEventListener("click", qr_gen_output)
 car.addEventListener("click", car_output)
 ip.addEventListener("click", ip_output)
-books.addEventListener("click", books_output)
+
 
 
 import {

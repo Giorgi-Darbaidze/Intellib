@@ -1,6 +1,6 @@
+const discord_link = document.getElementById("our_dis")
 const even = document.querySelectorAll('.even')
 const odd = document.querySelectorAll('.odd')
-const discord_link = document.getElementById("our_dis")
 
 // ---DARK THEME---
 function dark_theme_function(){

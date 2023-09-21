@@ -2,8 +2,8 @@
 const light_theme_btn = document.getElementById('light_theme')
 const dark_theme_btn = document.getElementById('dark_theme')
 
-dark_theme_btn.addEventListener('click', dark_theme_function)
 light_theme_btn.addEventListener('click', light_theme_function)
+dark_theme_btn.addEventListener('click', dark_theme_function)
 
 
 // ---DATA OUTPUT FUNCTION CALLS---
@@ -75,40 +75,40 @@ ip.addEventListener("click", ip_output)
 
 
 import {
-	username_output,
-	email_output,
-	vpn_output,
-	domain_output,
-	ip_output,
-	image_output,
-	social_output,
-	person_output,
-	phone_output,
-	car_output,
-	webcam_output,
-	public_output,
-	business_output,
-	maps_output,
-	plane_output,
-	archives_output,
 	translators_output,
-	hashes_output,
-	virusScan_output,
-	engines_output,
-	meta_output,
 	speciality_output,
-	darknet_output,
 	pastebins_output,
-	docs_output,
+	virusScan_output,
+	username_output,
+	business_output,
+	archives_output,
+	darknet_output,
+	engines_output,
+	schemes_output,
+	social_output,
+	hashes_output,
+	public_output,
+	webcam_output,
+	person_output,
+	domain_output,
 	qr_gen_output,
+	email_output,
+	plane_output,
+	phone_output,
+	image_output,
+	books_output,
+	tools_output,
 	leaks_output,
 	shops_output,
-	tools_output,
-	schemes_output,
-	books_output
+	maps_output,
+	meta_output,
+	docs_output,
+	car_output,
+	vpn_output,
+	ip_output
 } from './modules/data_output_functions.js'
 
 import {
-	dark_theme_function,
-	light_theme_function
+	light_theme_function,
+	dark_theme_function
 } from './modules/theme.js'
